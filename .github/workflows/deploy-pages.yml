@@ -20,9 +20,41 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            libasound2t64 libatk1.0-0 libatk-bridge2.0-0 libcairo2 \
+            libcups2 libdbus-1-3 libgdk-pixbuf2.0-0 libgtk-3-0 \
+            libnspr4 libnss3 libpango-1.0-0 libx11-6 libx11-xcb1 \
+            libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 \
+            libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
+            fonts-liberation xdg-utils
+
+      - name: Install screenshot-glb
+        run: npm install -g @shopify/screenshot-glb
+
+      - name: Generate thumbnails
+        run: |
+          mkdir -p docs/thumbs
+          git ls-files "*.glb" | while IFS= read -r glb; do
+            cat="$(dirname "$glb")"
+            base="$(basename "$glb" .glb)"
+            mkdir -p "docs/thumbs/$cat"
+            out="docs/thumbs/$cat/$base.png"
+            if [ ! -f "$out" ]; then
+              echo "Rendering $glb"
+              screenshot-glb -i "$glb" -o "$out" --width 256 --height 256 || true
+            fi
+          done
+
       - name: Generate asset manifest
         run: |
-          node - <<'EOF'
+          node - <<'SCRIPT'
           const { execSync } = require('child_process');
           const fs = require('fs');
           const files = execSync('git ls-files "*.glb"').toString().trim().split('\n').filter(Boolean);
@@ -35,12 +67,15 @@ jobs:
               .replace(/_v\d+$/, '')
               .replace(/[_-]/g, ' ')
               .replace(/\b\w/g, c => c.toUpperCase());
+            const thumb = `thumbs/${cat}/${base}.png`;
             if (!manifest[cat]) manifest[cat] = [];
-            manifest[cat].push({ name, path: f });
+            manifest[cat].push({ name, path: f, thumb });
           }
           fs.writeFileSync('docs/manifest.json', JSON.stringify(manifest, null, 2));
-          console.log('Manifest:', Object.keys(manifest).join(', '), '| Total:', files.length);
-          EOF
+          const total = Object.values(manifest).flat().length;
+          console.log('Categories:', Object.keys(manifest).join(', '));
+          console.log('Total assets:', total);
+          SCRIPT
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
