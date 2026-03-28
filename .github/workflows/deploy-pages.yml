@@ -1,0 +1,59 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate asset manifest
+        run: |
+          node - <<'EOF'
+          const { execSync } = require('child_process');
+          const fs = require('fs');
+          const files = execSync('git ls-files "*.glb"').toString().trim().split('\n').filter(Boolean);
+          const manifest = {};
+          for (const f of files) {
+            const cat = f.split('/')[0];
+            const base = f.split('/').pop().replace(/\.glb$/, '');
+            const name = base
+              .replace(/_[a-f0-9]{8}_v\d+$/, '')
+              .replace(/_v\d+$/, '')
+              .replace(/[_-]/g, ' ')
+              .replace(/\b\w/g, c => c.toUpperCase());
+            if (!manifest[cat]) manifest[cat] = [];
+            manifest[cat].push({ name, path: f });
+          }
+          fs.writeFileSync('docs/manifest.json', JSON.stringify(manifest, null, 2));
+          console.log('Manifest:', Object.keys(manifest).join(', '), '| Total:', files.length);
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
