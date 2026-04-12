@@ -54,13 +54,14 @@ jobs:
             node docs/render-glb.js "$glb" "$out" 256 256 || echo "WARN: failed $glb"
           done
 
-      - name: Generate asset manifest
+      - name: Generate asset manifest and model list
         run: |
           node - <<'SCRIPT'
           const { execSync } = require('child_process');
           const fs = require('fs');
           const files = execSync('git ls-files "*.glb"').toString().trim().split('\n').filter(Boolean);
           const manifest = {};
+          const byCategory = {};
           for (const f of files) {
             const cat = f.split('/')[0];
             const base = f.split('/').pop().replace(/\.glb$/, '');
@@ -70,10 +71,24 @@ jobs:
               .replace(/[_-]/g, ' ')
               .replace(/\b\w/g, c => c.toUpperCase());
             const thumb = `thumbs/${f.replace(/\.glb$/, '.png')}`;
+            const entry = { name, path: f, thumb };
             if (!manifest[cat]) manifest[cat] = [];
-            manifest[cat].push({ name, path: f, thumb });
+            manifest[cat].push(entry);
+            if (!byCategory[cat]) byCategory[cat] = [];
+            byCategory[cat].push({ name, path: f, thumb });
           }
           fs.writeFileSync('docs/manifest.json', JSON.stringify(manifest));
+          const lines = ['# Auto-generated model list', ''];
+          for (const [cat, entries] of Object.entries(byCategory).sort()) {
+            lines.push(`${cat}:`);
+            for (const e of entries) {
+              lines.push(`  - name: ${JSON.stringify(e.name)}`);
+              lines.push(`    path: ${e.path}`);
+              lines.push(`    thumb: ${e.thumb}`);
+            }
+            lines.push('');
+          }
+          fs.writeFileSync('docs/model-list.yaml', lines.join('\n'));
           console.log('Total assets:', Object.values(manifest).flat().length);
           SCRIPT
 

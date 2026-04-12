@@ -36,7 +36,7 @@ const glbBytes = fs.readFileSync(glbPath);
 </head><body>
 <model-viewer id="mv" src="http://127.0.0.1:${port}/model.glb"
   style="width:${width}px;height:${height}px;background-color:#1a1a1a"
-  camera-controls shadow-intensity="1" exposure="1.2" tone-mapping="commerce">
+  shadow-intensity="1" exposure="1.2" tone-mapping="commerce">
 </model-viewer>
 </body></html>`);
 
