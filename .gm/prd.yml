@@ -1,0 +1,53 @@
+- id: categorize-root-models
+  subject: Categorize all 78 root .glb files into appropriate existing folders
+  status: in_progress
+  description: Organize scattering root-level 3D models into their proper categorized directories based on semantic content
+  effort: large
+  category: refactor
+  route_family: representation
+  failure_modes: [wrong-folder-mapping, missing-folder-for-certain-model-types, filename-conflicts, lost-files]
+  route_fit: unexamined
+  authorization: none
+  blocking: []
+  blockedBy: []
+  acceptance:
+    - All 78 .glb files moved from root to appropriate categorized subdirectories
+    - No models remain in root after organization
+    - Each model placed in semantically correct folder (e.g., Electronics → electronics, Furniture → furniture, trees → nature/nature, etc.)
+    - Folder mapping documented in comments
+  edge_cases:
+    - Model with ambiguous category → choose best-fit existing folder
+    - Model requiring new folder type → verify no existing folder matches before creating new one
+    - Variant files (v1–v4) → move all variants together
+  mapping:
+    a_brass_telescope: Decor
+    a_camping_tent: Outdoor
+    a_ceramic_vase: Decor
+    a_copper_kettle: Decor
+    a_crystal_chandelier: Decor
+    a_diesel_generator: Industrial
+    a_garden_fountain: Outdoor
+    a_grand_piano: Furniture
+    a_large_oak_tree: Nature
+    a_leather_armchair: Furniture
+    a_marble_statue: Decor
+    a_metal_locker: Industrial
+    a_park_bench: Outdoor
+    a_payphone: Urban
+    a_phone_booth: Urban
+    a_retro_bicycle: Vehicles
+    a_rustic_lantern: Outdoor
+    a_satellite_dish: Electronics
+    a_shopping_cart: Urban
+    a_small_wooden_chair_lowpoly: Furniture
+    a_stone_arch: Outdoor
+    a_stone_well: Nature
+    a_streetlight_pole: Urban
+    a_vintage_typewriter: Electronics
+    a_wheelbarrow: Outdoor
+    a_wooden_barrel: Outdoor
+    a_wooden_bookshelf: Furniture
+    a_wooden_door: Furniture
+    a_wooden_fence: Outdoor
+    a_wooden_ladder: Outdoor
+    a_wooden_picnic_table: Outdoor
