@@ -1,0 +1,72 @@
+# 14f 3.1kL 28fn 0cls cx2.5
+*Legend: f=files L=lines fn=functions cls=classes cx=avg-complexity | file:line:name(NL)=location Np=params | ↑N=imports-from ↓N=imported-by (N)=occurrences (+N)=more | 🔄circular 🏝️isolated 🔥complex 📋duplicated 📁large*
+
+**Langs:** JSON:74% JS:25%
+
+## 🛠️ Tech Stack
+
+**Patterns:** flattenVNodes(7), isVElement(6), nodes.push(4), changes.push(4), updateAttributesCore(4), el.setAttribute(3)
+**Top IDs:** props(64), key(52), node(35), type(24), children(21), velement(21)
+
+## ⚡ Code Patterns
+
+**Async:** async(2), await(9)
+**Errors:** try/catch(1)
+**Internal calls:** flattenVNodes(7), isVElement(6), updateAttributesCore(4), nodes.push(4), changes.push(4), el.setAttribute(3), setWebJSXChildNodeCache(3), document.createElementNS(2)
+
+## 🔗 I/O & Integration
+
+**Storage:** files(1)
+**Events:** emit(0), listen(1)
+
+## 📊 Code Organization
+
+**Long funcs:** webjsx/applyDiff.js:11:diffChildren(85L), webjsx/applyDiff.js:115:applyChanges(67L), webjsx/attributes.js:67:updateAttributesCore(56L)
+
+## 🔄 Architecture
+
+**L0 [pure exports]:** constants(7↓), elementTags(3↓), renderSuspension(3↓)
+**L1 [low imports]:** utils(1↑6↓)
+**L3 [pure imports]:** factory(5↑), jsx-runtime(5↑), applyDiff(5↑)
+**Hubs:** utils(1↑6↓), constants(0↑7↓), factory(5↑0↓), createDOMElement(4↑1↓), jsx-runtime(5↑0↓)
+**External:** playwright
+
+## 🔌 API Surface
+
+**Entry files:** renderSuspension, elementTags, constants
+
+## 🚨 Issues
+
+- 📋 2 duplicated groups
+
+## 🧹 Dead Code & Tests
+
+**Orphaned:** manifest.json, render-glb.js
+**Unused exports:** jsx-runtime.js: Fragment | factory.js: createElement, Fragment
+**Tests:** 0/14 (0%)
+
+## 📦 Modules
+
+- docs: 14f, 52cx, 26↑26↓
+
+## 📄 File Index
+
+**docs/lib/webjsx/applyDiff.js** 182L fn: applyDiff, diffChildren, canUpdateVNodes, applyChanges
+**docs/lib/webjsx/attributes.js** 154L fn: updateEventListener, updatePropOrAttr, updateAttributesCore, setAttributes (+1)
+**docs/lib/webjsx/constants.js** 4L
+**docs/lib/webjsx/createDOMElement.js** 52L fn: createDOMElement
+**docs/lib/webjsx/createElement.js** 75L fn: createElement, createElementJSX
+**docs/lib/webjsx/elementTags.js** 115L
+**docs/lib/webjsx/factory.js** 6L exports: [createElement], [Fragment]
+**docs/lib/webjsx/index.js** 6L exports: [createElement], [createDOMElement], [Fragment], [applyDiff]
+**docs/lib/webjsx/jsx-runtime.js** 30L exports: [Fragment] fn: jsx, jsxs, jsxDEV
+**docs/lib/webjsx/renderSuspension.js** 25L fn: definesRenderSuspension, withRenderSuspension
+**docs/lib/webjsx/types.js** 5L
+**docs/lib/webjsx/utils.js** 84L fn: flattenVNodes, isValidVNode, getChildNodes, assignRef (+7)
+**docs/manifest.json** 2319L
+**docs/render-glb.js** 52L
+
+Git: branch: master, 121 uncommitted
+Hot: deploy-pages.yml(4), .gitignore(2), CityBench4.glb(1), index.html(1)
+Tooling: GitHub Actions (deploy-pages.yml)
+Conv[JS]: 4-space, double quotes, semicolons, function declarations, named exports, relative imports, camelCase files

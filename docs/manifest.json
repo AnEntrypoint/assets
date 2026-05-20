@@ -1,0 +1,2319 @@
+{
+  "Airport": [
+    {
+      "name": "Airport Metal Detector",
+      "path": "Airport/airport_metal_detector_5ea614dc_v2.glb",
+      "file": "airport_metal_detector_5ea614dc_v2"
+    }
+  ],
+  "Appliances": [
+    {
+      "name": "Oven Everyday Realistic Style",
+      "path": "Appliances/oven_everyday_realistic_style_3e9715f0_v1.glb",
+      "file": "oven_everyday_realistic_style_3e9715f0_v1"
+    },
+    {
+      "name": "Oven Everyday Realistic Style",
+      "path": "Appliances/oven_everyday_realistic_style_3e9715f0_v2.glb",
+      "file": "oven_everyday_realistic_style_3e9715f0_v2"
+    },
+    {
+      "name": "Oven Everyday Realistic Style",
+      "path": "Appliances/oven_everyday_realistic_style_3e9715f0_v3.glb",
+      "file": "oven_everyday_realistic_style_3e9715f0_v3"
+    },
+    {
+      "name": "Oven Everyday Realistic Style",
+      "path": "Appliances/oven_everyday_realistic_style_3e9715f0_v4.glb",
+      "file": "oven_everyday_realistic_style_3e9715f0_v4"
+    },
+    {
+      "name": "Stove Everyday Realistic Style",
+      "path": "Appliances/stove_everyday_realistic_style_ceb07c35_v1.glb",
+      "file": "stove_everyday_realistic_style_ceb07c35_v1"
+    },
+    {
+      "name": "Stove Everyday Realistic Style",
+      "path": "Appliances/stove_everyday_realistic_style_ceb07c35_v2.glb",
+      "file": "stove_everyday_realistic_style_ceb07c35_v2"
+    },
+    {
+      "name": "Stove Everyday Realistic Style",
+      "path": "Appliances/stove_everyday_realistic_style_ceb07c35_v3.glb",
+      "file": "stove_everyday_realistic_style_ceb07c35_v3"
+    },
+    {
+      "name": "Stove Everyday Realistic Style",
+      "path": "Appliances/stove_everyday_realistic_style_ceb07c35_v4.glb",
+      "file": "stove_everyday_realistic_style_ceb07c35_v4"
+    }
+  ],
+  "BeerBottles": [
+    {
+      "name": "BeerBottle1",
+      "path": "BeerBottles/BeerBottle1.glb",
+      "file": "BeerBottle1"
+    },
+    {
+      "name": "BeerBottle2",
+      "path": "BeerBottles/BeerBottle2.glb",
+      "file": "BeerBottle2"
+    },
+    {
+      "name": "BeerBottle3",
+      "path": "BeerBottles/BeerBottle3.glb",
+      "file": "BeerBottle3"
+    },
+    {
+      "name": "BeerBottle4",
+      "path": "BeerBottles/BeerBottle4.glb",
+      "file": "BeerBottle4"
+    },
+    {
+      "name": "BrokenBeerBottles1",
+      "path": "BeerBottles/BrokenBeerBottles1.glb",
+      "file": "BrokenBeerBottles1"
+    },
+    {
+      "name": "BrokenBeerBottles2",
+      "path": "BeerBottles/BrokenBeerBottles2.glb",
+      "file": "BrokenBeerBottles2"
+    }
+  ],
+  "Containers": [
+    {
+      "name": "Shipping Container",
+      "path": "Containers/shipping_container_d50ffbf4_v1.glb",
+      "file": "shipping_container_d50ffbf4_v1"
+    },
+    {
+      "name": "Shipping Container",
+      "path": "Containers/shipping_container_d50ffbf4_v2.glb",
+      "file": "shipping_container_d50ffbf4_v2"
+    },
+    {
+      "name": "Shipping Container",
+      "path": "Containers/shipping_container_d50ffbf4_v3.glb",
+      "file": "shipping_container_d50ffbf4_v3"
+    },
+    {
+      "name": "Shipping Container",
+      "path": "Containers/shipping_container_d50ffbf4_v4.glb",
+      "file": "shipping_container_d50ffbf4_v4"
+    },
+    {
+      "name": "Storage Container",
+      "path": "Containers/storage_container_3d82f0c5_v2.glb",
+      "file": "storage_container_3d82f0c5_v2"
+    },
+    {
+      "name": "Storage Container",
+      "path": "Containers/storage_container_3d82f0c5_v3.glb",
+      "file": "storage_container_3d82f0c5_v3"
+    },
+    {
+      "name": "Storage Container",
+      "path": "Containers/storage_container_3d82f0c5_v4.glb",
+      "file": "storage_container_3d82f0c5_v4"
+    },
+    {
+      "name": "Warehouse Crate",
+      "path": "Containers/warehouse_crate_6e8a0927_v1.glb",
+      "file": "warehouse_crate_6e8a0927_v1"
+    },
+    {
+      "name": "Warehouse Crate",
+      "path": "Containers/warehouse_crate_6e8a0927_v2.glb",
+      "file": "warehouse_crate_6e8a0927_v2"
+    },
+    {
+      "name": "Warehouse Crate",
+      "path": "Containers/warehouse_crate_6e8a0927_v4.glb",
+      "file": "warehouse_crate_6e8a0927_v4"
+    },
+    {
+      "name": "Warehouse Shelf",
+      "path": "Containers/warehouse_shelf_b7b87618_v1.glb",
+      "file": "warehouse_shelf_b7b87618_v1"
+    },
+    {
+      "name": "Warehouse Shelf",
+      "path": "Containers/warehouse_shelf_b7b87618_v2.glb",
+      "file": "warehouse_shelf_b7b87618_v2"
+    },
+    {
+      "name": "Warehouse Shelf",
+      "path": "Containers/warehouse_shelf_b7b87618_v3.glb",
+      "file": "warehouse_shelf_b7b87618_v3"
+    },
+    {
+      "name": "Warehouse Shelf",
+      "path": "Containers/warehouse_shelf_b7b87618_v4.glb",
+      "file": "warehouse_shelf_b7b87618_v4"
+    }
+  ],
+  "Decor": [
+    {
+      "name": "Fancy Vase Everyday Realistic Style",
+      "path": "Decor/fancy_vase_everyday_realistic_style_828f3c92_v1.glb",
+      "file": "fancy_vase_everyday_realistic_style_828f3c92_v1"
+    },
+    {
+      "name": "Fancy Vase Everyday Realistic Style",
+      "path": "Decor/fancy_vase_everyday_realistic_style_828f3c92_v2.glb",
+      "file": "fancy_vase_everyday_realistic_style_828f3c92_v2"
+    },
+    {
+      "name": "Fancy Vase Everyday Realistic Style",
+      "path": "Decor/fancy_vase_everyday_realistic_style_828f3c92_v3.glb",
+      "file": "fancy_vase_everyday_realistic_style_828f3c92_v3"
+    },
+    {
+      "name": "Fancy Vase Everyday Realistic Style",
+      "path": "Decor/fancy_vase_everyday_realistic_style_828f3c92_v4.glb",
+      "file": "fancy_vase_everyday_realistic_style_828f3c92_v4"
+    }
+  ],
+  "Electronics": [
+    {
+      "name": "Dj Mixer",
+      "path": "Electronics/dj_mixer_baeeec4e_v1.glb",
+      "file": "dj_mixer_baeeec4e_v1"
+    },
+    {
+      "name": "Dj Mixer",
+      "path": "Electronics/dj_mixer_baeeec4e_v2.glb",
+      "file": "dj_mixer_baeeec4e_v2"
+    },
+    {
+      "name": "Dj Mixer",
+      "path": "Electronics/dj_mixer_baeeec4e_v3.glb",
+      "file": "dj_mixer_baeeec4e_v3"
+    },
+    {
+      "name": "Dj Mixer",
+      "path": "Electronics/dj_mixer_baeeec4e_v4.glb",
+      "file": "dj_mixer_baeeec4e_v4"
+    },
+    {
+      "name": "Hi Fi Sound System",
+      "path": "Electronics/hi-fi_sound_system_2a2cc620_v1.glb",
+      "file": "hi-fi_sound_system_2a2cc620_v1"
+    },
+    {
+      "name": "Hi Fi Sound System",
+      "path": "Electronics/hi-fi_sound_system_2a2cc620_v2.glb",
+      "file": "hi-fi_sound_system_2a2cc620_v2"
+    },
+    {
+      "name": "Hi Fi Sound System",
+      "path": "Electronics/hi-fi_sound_system_2a2cc620_v3.glb",
+      "file": "hi-fi_sound_system_2a2cc620_v3"
+    },
+    {
+      "name": "Hi Fi Sound System",
+      "path": "Electronics/hi-fi_sound_system_2a2cc620_v4.glb",
+      "file": "hi-fi_sound_system_2a2cc620_v4"
+    },
+    {
+      "name": "Night Club Speakers",
+      "path": "Electronics/night_club_speakers_9155e359_v1.glb",
+      "file": "night_club_speakers_9155e359_v1"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_03b09d1f_v1.glb",
+      "file": "server_rack_03b09d1f_v1"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_03b09d1f_v2.glb",
+      "file": "server_rack_03b09d1f_v2"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_03b09d1f_v3.glb",
+      "file": "server_rack_03b09d1f_v3"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_03b09d1f_v4.glb",
+      "file": "server_rack_03b09d1f_v4"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_c2999a18_v1.glb",
+      "file": "server_rack_c2999a18_v1"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_c2999a18_v2.glb",
+      "file": "server_rack_c2999a18_v2"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_c2999a18_v3.glb",
+      "file": "server_rack_c2999a18_v3"
+    },
+    {
+      "name": "Server Rack",
+      "path": "Electronics/server_rack_c2999a18_v4.glb",
+      "file": "server_rack_c2999a18_v4"
+    }
+  ],
+  "Furniture": [
+    {
+      "name": "Ancient Workshop Table",
+      "path": "Furniture/ancient_workshop_table_f07220b5_v1.glb",
+      "file": "ancient_workshop_table_f07220b5_v1"
+    },
+    {
+      "name": "Ancient Workshop Table",
+      "path": "Furniture/ancient_workshop_table_f07220b5_v2.glb",
+      "file": "ancient_workshop_table_f07220b5_v2"
+    },
+    {
+      "name": "Ancient Workshop Table",
+      "path": "Furniture/ancient_workshop_table_f07220b5_v3.glb",
+      "file": "ancient_workshop_table_f07220b5_v3"
+    },
+    {
+      "name": "Ancient Workshop Table",
+      "path": "Furniture/ancient_workshop_table_f07220b5_v4.glb",
+      "file": "ancient_workshop_table_f07220b5_v4"
+    },
+    {
+      "name": "Bar Counter Curved",
+      "path": "Furniture/bar_counter_curved_caaaa975_v1.glb",
+      "file": "bar_counter_curved_caaaa975_v1"
+    },
+    {
+      "name": "Bar Counter Curved",
+      "path": "Furniture/bar_counter_curved_caaaa975_v2.glb",
+      "file": "bar_counter_curved_caaaa975_v2"
+    },
+    {
+      "name": "Bar Counter Curved",
+      "path": "Furniture/bar_counter_curved_caaaa975_v3.glb",
+      "file": "bar_counter_curved_caaaa975_v3"
+    },
+    {
+      "name": "Bar Counter Curved",
+      "path": "Furniture/bar_counter_curved_caaaa975_v4.glb",
+      "file": "bar_counter_curved_caaaa975_v4"
+    },
+    {
+      "name": "Bench",
+      "path": "Furniture/bench_a0d4ec94_v1.glb",
+      "file": "bench_a0d4ec94_v1"
+    },
+    {
+      "name": "Bench",
+      "path": "Furniture/bench_a0d4ec94_v2.glb",
+      "file": "bench_a0d4ec94_v2"
+    },
+    {
+      "name": "Bench",
+      "path": "Furniture/bench_a0d4ec94_v3.glb",
+      "file": "bench_a0d4ec94_v3"
+    },
+    {
+      "name": "Bench",
+      "path": "Furniture/bench_a0d4ec94_v4.glb",
+      "file": "bench_a0d4ec94_v4"
+    },
+    {
+      "name": "Fancy Reception Desk",
+      "path": "Furniture/fancy_reception_desk_58fde71d_v1.glb",
+      "file": "fancy_reception_desk_58fde71d_v1"
+    },
+    {
+      "name": "Fancy Reception Desk",
+      "path": "Furniture/fancy_reception_desk_58fde71d_v2.glb",
+      "file": "fancy_reception_desk_58fde71d_v2"
+    },
+    {
+      "name": "Fancy Reception Desk",
+      "path": "Furniture/fancy_reception_desk_58fde71d_v3.glb",
+      "file": "fancy_reception_desk_58fde71d_v3"
+    },
+    {
+      "name": "Fancy Reception Desk",
+      "path": "Furniture/fancy_reception_desk_58fde71d_v4.glb",
+      "file": "fancy_reception_desk_58fde71d_v4"
+    },
+    {
+      "name": "Kitchen Cabinet Everyday Realistic Style",
+      "path": "Furniture/kitchen_cabinet_everyday_realistic_style_8368dfee_v1.glb",
+      "file": "kitchen_cabinet_everyday_realistic_style_8368dfee_v1"
+    },
+    {
+      "name": "Kitchen Cabinet Everyday Realistic Style",
+      "path": "Furniture/kitchen_cabinet_everyday_realistic_style_8368dfee_v2.glb",
+      "file": "kitchen_cabinet_everyday_realistic_style_8368dfee_v2"
+    },
+    {
+      "name": "Kitchen Cabinet Everyday Realistic Style",
+      "path": "Furniture/kitchen_cabinet_everyday_realistic_style_8368dfee_v3.glb",
+      "file": "kitchen_cabinet_everyday_realistic_style_8368dfee_v3"
+    },
+    {
+      "name": "Kitchen Cabinet Everyday Realistic Style",
+      "path": "Furniture/kitchen_cabinet_everyday_realistic_style_8368dfee_v4.glb",
+      "file": "kitchen_cabinet_everyday_realistic_style_8368dfee_v4"
+    },
+    {
+      "name": "Microwave Cabinet Everyday Realistic Style",
+      "path": "Furniture/microwave_cabinet_everyday_realistic_style_434ef68a_v1.glb",
+      "file": "microwave_cabinet_everyday_realistic_style_434ef68a_v1"
+    },
+    {
+      "name": "Microwave Cabinet Everyday Realistic Style",
+      "path": "Furniture/microwave_cabinet_everyday_realistic_style_434ef68a_v2.glb",
+      "file": "microwave_cabinet_everyday_realistic_style_434ef68a_v2"
+    },
+    {
+      "name": "Microwave Cabinet Everyday Realistic Style",
+      "path": "Furniture/microwave_cabinet_everyday_realistic_style_434ef68a_v3.glb",
+      "file": "microwave_cabinet_everyday_realistic_style_434ef68a_v3"
+    },
+    {
+      "name": "Microwave Cabinet Everyday Realistic Style",
+      "path": "Furniture/microwave_cabinet_everyday_realistic_style_434ef68a_v4.glb",
+      "file": "microwave_cabinet_everyday_realistic_style_434ef68a_v4"
+    },
+    {
+      "name": "Old Cheap Couch With A Bad Floral Pattern",
+      "path": "Furniture/old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v1.glb",
+      "file": "old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v1"
+    },
+    {
+      "name": "Old Cheap Couch With A Bad Floral Pattern",
+      "path": "Furniture/old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v2.glb",
+      "file": "old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v2"
+    },
+    {
+      "name": "Old Cheap Couch With A Bad Floral Pattern",
+      "path": "Furniture/old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v3.glb",
+      "file": "old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v3"
+    },
+    {
+      "name": "Old Cheap Couch With A Bad Floral Pattern",
+      "path": "Furniture/old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v4.glb",
+      "file": "old_cheap_couch_with_a_bad_floral_pattern_53278f1b_v4"
+    },
+    {
+      "name": "Shop Counter",
+      "path": "Furniture/shop_counter_f668a712_v1.glb",
+      "file": "shop_counter_f668a712_v1"
+    },
+    {
+      "name": "Workshop Table",
+      "path": "Furniture/workshop_table_15b38270_v1.glb",
+      "file": "workshop_table_15b38270_v1"
+    },
+    {
+      "name": "Workshop Table",
+      "path": "Furniture/workshop_table_15b38270_v2.glb",
+      "file": "workshop_table_15b38270_v2"
+    },
+    {
+      "name": "Workshop Table",
+      "path": "Furniture/workshop_table_15b38270_v3.glb",
+      "file": "workshop_table_15b38270_v3"
+    },
+    {
+      "name": "Workshop Table",
+      "path": "Furniture/workshop_table_15b38270_v4.glb",
+      "file": "workshop_table_15b38270_v4"
+    }
+  ],
+  "Industrial": [
+    {
+      "name": "Anvil Realistic Style",
+      "path": "Industrial/anvil_realistic_style_4c900f59_v1.glb",
+      "file": "anvil_realistic_style_4c900f59_v1"
+    },
+    {
+      "name": "Anvil Realistic Style",
+      "path": "Industrial/anvil_realistic_style_4c900f59_v2.glb",
+      "file": "anvil_realistic_style_4c900f59_v2"
+    },
+    {
+      "name": "Anvil Realistic Style",
+      "path": "Industrial/anvil_realistic_style_4c900f59_v3.glb",
+      "file": "anvil_realistic_style_4c900f59_v3"
+    },
+    {
+      "name": "Anvil Realistic Style",
+      "path": "Industrial/anvil_realistic_style_4c900f59_v4.glb",
+      "file": "anvil_realistic_style_4c900f59_v4"
+    },
+    {
+      "name": "Forge Furnace Realistic Style",
+      "path": "Industrial/forge_furnace_realistic_style_cfa5bdbf_v1.glb",
+      "file": "forge_furnace_realistic_style_cfa5bdbf_v1"
+    },
+    {
+      "name": "Forge Furnace Realistic Style",
+      "path": "Industrial/forge_furnace_realistic_style_cfa5bdbf_v2.glb",
+      "file": "forge_furnace_realistic_style_cfa5bdbf_v2"
+    },
+    {
+      "name": "Forge Furnace Realistic Style",
+      "path": "Industrial/forge_furnace_realistic_style_cfa5bdbf_v3.glb",
+      "file": "forge_furnace_realistic_style_cfa5bdbf_v3"
+    },
+    {
+      "name": "Forge Furnace Realistic Style",
+      "path": "Industrial/forge_furnace_realistic_style_cfa5bdbf_v4.glb",
+      "file": "forge_furnace_realistic_style_cfa5bdbf_v4"
+    },
+    {
+      "name": "Garbage Bin Realistic Airport",
+      "path": "Industrial/garbage_bin_realistic_airport_0d0451e4_v1.glb",
+      "file": "garbage_bin_realistic_airport_0d0451e4_v1"
+    },
+    {
+      "name": "Garbage Bin Realistic Airport",
+      "path": "Industrial/garbage_bin_realistic_airport_0d0451e4_v2.glb",
+      "file": "garbage_bin_realistic_airport_0d0451e4_v2"
+    },
+    {
+      "name": "Garbage Bin Realistic Airport",
+      "path": "Industrial/garbage_bin_realistic_airport_0d0451e4_v3.glb",
+      "file": "garbage_bin_realistic_airport_0d0451e4_v3"
+    },
+    {
+      "name": "Garbage Bin Realistic Airport",
+      "path": "Industrial/garbage_bin_realistic_airport_0d0451e4_v4.glb",
+      "file": "garbage_bin_realistic_airport_0d0451e4_v4"
+    },
+    {
+      "name": "Heavy Machinery  Crane From Junk Yard With Magnet For Lifting Cars",
+      "path": "Industrial/heavy_machinery__crane_from_junk_yard_with_magnet_for_lifting_cars_db884752_v1.glb",
+      "file": "heavy_machinery__crane_from_junk_yard_with_magnet_for_lifting_cars_db884752_v1"
+    },
+    {
+      "name": "Heavy Machinery  Crane From Junk Yard With Magnet For Lifting Cars",
+      "path": "Industrial/heavy_machinery__crane_from_junk_yard_with_magnet_for_lifting_cars_db884752_v2.glb",
+      "file": "heavy_machinery__crane_from_junk_yard_with_magnet_for_lifting_cars_db884752_v2"
+    },
+    {
+      "name": "Heavy Machinery  Crane From Junk Yard With Magnet For Lifting Cars",
+      "path": "Industrial/heavy_machinery__crane_from_junk_yard_with_magnet_for_lifting_cars_db884752_v3.glb",
+      "file": "heavy_machinery__crane_from_junk_yard_with_magnet_for_lifting_cars_db884752_v3"
+    },
+    {
+      "name": "Industrial Pipe",
+      "path": "Industrial/industrial_pipe_cb740c0c_v1.glb",
+      "file": "industrial_pipe_cb740c0c_v1"
+    },
+    {
+      "name": "Industrial Pipe",
+      "path": "Industrial/industrial_pipe_cb740c0c_v2.glb",
+      "file": "industrial_pipe_cb740c0c_v2"
+    },
+    {
+      "name": "Industrial Pipe",
+      "path": "Industrial/industrial_pipe_cb740c0c_v3.glb",
+      "file": "industrial_pipe_cb740c0c_v3"
+    },
+    {
+      "name": "Industrial Pipe",
+      "path": "Industrial/industrial_pipe_cb740c0c_v4.glb",
+      "file": "industrial_pipe_cb740c0c_v4"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_3b570c7e_v1.glb",
+      "file": "l-shaped_industrial_pipe_3b570c7e_v1"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_3b570c7e_v2.glb",
+      "file": "l-shaped_industrial_pipe_3b570c7e_v2"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_3b570c7e_v3.glb",
+      "file": "l-shaped_industrial_pipe_3b570c7e_v3"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_3b570c7e_v4.glb",
+      "file": "l-shaped_industrial_pipe_3b570c7e_v4"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_f7fd8524_v1.glb",
+      "file": "l-shaped_industrial_pipe_f7fd8524_v1"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_f7fd8524_v2.glb",
+      "file": "l-shaped_industrial_pipe_f7fd8524_v2"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_f7fd8524_v3.glb",
+      "file": "l-shaped_industrial_pipe_f7fd8524_v3"
+    },
+    {
+      "name": "L Shaped Industrial Pipe",
+      "path": "Industrial/l-shaped_industrial_pipe_f7fd8524_v4.glb",
+      "file": "l-shaped_industrial_pipe_f7fd8524_v4"
+    },
+    {
+      "name": "Large Dumpster City Realistic Style",
+      "path": "Industrial/large_dumpster_city_realistic_style_736a08e1_v1.glb",
+      "file": "large_dumpster_city_realistic_style_736a08e1_v1"
+    },
+    {
+      "name": "Large Dumpster City Realistic Style",
+      "path": "Industrial/large_dumpster_city_realistic_style_736a08e1_v2.glb",
+      "file": "large_dumpster_city_realistic_style_736a08e1_v2"
+    },
+    {
+      "name": "Large Dumpster City Realistic Style",
+      "path": "Industrial/large_dumpster_city_realistic_style_736a08e1_v3.glb",
+      "file": "large_dumpster_city_realistic_style_736a08e1_v3"
+    },
+    {
+      "name": "Large Dumpster City Realistic Style",
+      "path": "Industrial/large_dumpster_city_realistic_style_736a08e1_v4.glb",
+      "file": "large_dumpster_city_realistic_style_736a08e1_v4"
+    },
+    {
+      "name": "Water Tank",
+      "path": "Industrial/water_tank_c27c18f7_v1.glb",
+      "file": "water_tank_c27c18f7_v1"
+    },
+    {
+      "name": "Water Tank",
+      "path": "Industrial/water_tank_c27c18f7_v2.glb",
+      "file": "water_tank_c27c18f7_v2"
+    },
+    {
+      "name": "Water Tank",
+      "path": "Industrial/water_tank_c27c18f7_v3.glb",
+      "file": "water_tank_c27c18f7_v3"
+    },
+    {
+      "name": "Water Tank",
+      "path": "Industrial/water_tank_c27c18f7_v4.glb",
+      "file": "water_tank_c27c18f7_v4"
+    }
+  ],
+  "Inside": [
+    {
+      "name": "3dPrinter1",
+      "path": "Inside/3dPrinter1.glb",
+      "file": "3dPrinter1"
+    },
+    {
+      "name": "3dPrinter2",
+      "path": "Inside/3dPrinter2.glb",
+      "file": "3dPrinter2"
+    },
+    {
+      "name": "AirConditioner1",
+      "path": "Inside/AirConditioner1.glb",
+      "file": "AirConditioner1"
+    },
+    {
+      "name": "AirConditioner2",
+      "path": "Inside/AirConditioner2.glb",
+      "file": "AirConditioner2"
+    },
+    {
+      "name": "AirConditioner3",
+      "path": "Inside/AirConditioner3.glb",
+      "file": "AirConditioner3"
+    },
+    {
+      "name": "AirConditioner4",
+      "path": "Inside/AirConditioner4.glb",
+      "file": "AirConditioner4"
+    },
+    {
+      "name": "ArmourToolBox1",
+      "path": "Inside/ArmourToolBox1.glb",
+      "file": "ArmourToolBox1"
+    },
+    {
+      "name": "ArmourToolBox2",
+      "path": "Inside/ArmourToolBox2.glb",
+      "file": "ArmourToolBox2"
+    },
+    {
+      "name": "ArmourToolBox3",
+      "path": "Inside/ArmourToolBox3.glb",
+      "file": "ArmourToolBox3"
+    },
+    {
+      "name": "ArmourToolMan",
+      "path": "Inside/ArmourToolMan.glb",
+      "file": "ArmourToolMan"
+    },
+    {
+      "name": "Atm1",
+      "path": "Inside/Atm1.glb",
+      "file": "Atm1"
+    },
+    {
+      "name": "Atm2",
+      "path": "Inside/Atm2.glb",
+      "file": "Atm2"
+    },
+    {
+      "name": "Atm3",
+      "path": "Inside/Atm3.glb",
+      "file": "Atm3"
+    },
+    {
+      "name": "Atm4",
+      "path": "Inside/Atm4.glb",
+      "file": "Atm4"
+    },
+    {
+      "name": "Ball1",
+      "path": "Inside/Ball1.glb",
+      "file": "Ball1"
+    },
+    {
+      "name": "BreakRoomChair1",
+      "path": "Inside/BreakRoomChair1.glb",
+      "file": "BreakRoomChair1"
+    },
+    {
+      "name": "BreakRoomChair2",
+      "path": "Inside/BreakRoomChair2.glb",
+      "file": "BreakRoomChair2"
+    },
+    {
+      "name": "BreakRoomChair3",
+      "path": "Inside/BreakRoomChair3.glb",
+      "file": "BreakRoomChair3"
+    },
+    {
+      "name": "BreakRoomChair4",
+      "path": "Inside/BreakRoomChair4.glb",
+      "file": "BreakRoomChair4"
+    },
+    {
+      "name": "BreakRoomCouch1",
+      "path": "Inside/BreakRoomCouch1.glb",
+      "file": "BreakRoomCouch1"
+    },
+    {
+      "name": "BreakRoomCouch2",
+      "path": "Inside/BreakRoomCouch2.glb",
+      "file": "BreakRoomCouch2"
+    },
+    {
+      "name": "BreakRoomCouch3",
+      "path": "Inside/BreakRoomCouch3.glb",
+      "file": "BreakRoomCouch3"
+    },
+    {
+      "name": "BreakRoomCouch4",
+      "path": "Inside/BreakRoomCouch4.glb",
+      "file": "BreakRoomCouch4"
+    },
+    {
+      "name": "BreakRoomCouch5",
+      "path": "Inside/BreakRoomCouch5.glb",
+      "file": "BreakRoomCouch5"
+    },
+    {
+      "name": "BreakRoomCouch6",
+      "path": "Inside/BreakRoomCouch6.glb",
+      "file": "BreakRoomCouch6"
+    },
+    {
+      "name": "BreakRoomCouch7",
+      "path": "Inside/BreakRoomCouch7.glb",
+      "file": "BreakRoomCouch7"
+    },
+    {
+      "name": "BreakRoomTable1",
+      "path": "Inside/BreakRoomTable1.glb",
+      "file": "BreakRoomTable1"
+    },
+    {
+      "name": "BreakRoomTable2",
+      "path": "Inside/BreakRoomTable2.glb",
+      "file": "BreakRoomTable2"
+    },
+    {
+      "name": "BrokenOfficeChair1",
+      "path": "Inside/BrokenOfficeChair1.glb",
+      "file": "BrokenOfficeChair1"
+    },
+    {
+      "name": "BrokenOfficeChair2",
+      "path": "Inside/BrokenOfficeChair2.glb",
+      "file": "BrokenOfficeChair2"
+    },
+    {
+      "name": "BrokenWaterCooler1",
+      "path": "Inside/BrokenWaterCooler1.glb",
+      "file": "BrokenWaterCooler1"
+    },
+    {
+      "name": "BrokenWaterCooler2",
+      "path": "Inside/BrokenWaterCooler2.glb",
+      "file": "BrokenWaterCooler2"
+    },
+    {
+      "name": "CanMan1",
+      "path": "Inside/CanMan1.glb",
+      "file": "CanMan1"
+    },
+    {
+      "name": "CanMan2",
+      "path": "Inside/CanMan2.glb",
+      "file": "CanMan2"
+    },
+    {
+      "name": "CanMan3",
+      "path": "Inside/CanMan3.glb",
+      "file": "CanMan3"
+    },
+    {
+      "name": "CashRegister1",
+      "path": "Inside/CashRegister1.glb",
+      "file": "CashRegister1"
+    },
+    {
+      "name": "CashRegister2",
+      "path": "Inside/CashRegister2.glb",
+      "file": "CashRegister2"
+    },
+    {
+      "name": "CashRegister3",
+      "path": "Inside/CashRegister3.glb",
+      "file": "CashRegister3"
+    },
+    {
+      "name": "ComfyChairs1",
+      "path": "Inside/ComfyChairs1.glb",
+      "file": "ComfyChairs1"
+    },
+    {
+      "name": "CrushedGarbageCan1",
+      "path": "Inside/CrushedGarbageCan1.glb",
+      "file": "CrushedGarbageCan1"
+    },
+    {
+      "name": "CrushedGarbageCan2",
+      "path": "Inside/CrushedGarbageCan2.glb",
+      "file": "CrushedGarbageCan2"
+    },
+    {
+      "name": "CrushedGarbageCan3",
+      "path": "Inside/CrushedGarbageCan3.glb",
+      "file": "CrushedGarbageCan3"
+    },
+    {
+      "name": "CrushedGarbageCan4",
+      "path": "Inside/CrushedGarbageCan4.glb",
+      "file": "CrushedGarbageCan4"
+    },
+    {
+      "name": "DinnerTable1",
+      "path": "Inside/DinnerTable1.glb",
+      "file": "DinnerTable1"
+    },
+    {
+      "name": "DinnerTable2",
+      "path": "Inside/DinnerTable2.glb",
+      "file": "DinnerTable2"
+    },
+    {
+      "name": "DinnerTable3",
+      "path": "Inside/DinnerTable3.glb",
+      "file": "DinnerTable3"
+    },
+    {
+      "name": "Dumpster1",
+      "path": "Inside/Dumpster1.glb",
+      "file": "Dumpster1"
+    },
+    {
+      "name": "Dumpster2",
+      "path": "Inside/Dumpster2.glb",
+      "file": "Dumpster2"
+    },
+    {
+      "name": "EspressoMachine1",
+      "path": "Inside/EspressoMachine1.glb",
+      "file": "EspressoMachine1"
+    },
+    {
+      "name": "EspressoMachine2",
+      "path": "Inside/EspressoMachine2.glb",
+      "file": "EspressoMachine2"
+    },
+    {
+      "name": "EspressoMachine3",
+      "path": "Inside/EspressoMachine3.glb",
+      "file": "EspressoMachine3"
+    },
+    {
+      "name": "FillingCabinet1",
+      "path": "Inside/FillingCabinet1.glb",
+      "file": "FillingCabinet1"
+    },
+    {
+      "name": "FillingCabinet2",
+      "path": "Inside/FillingCabinet2.glb",
+      "file": "FillingCabinet2"
+    },
+    {
+      "name": "FillingCabinet3",
+      "path": "Inside/FillingCabinet3.glb",
+      "file": "FillingCabinet3"
+    },
+    {
+      "name": "FillingCabinet4",
+      "path": "Inside/FillingCabinet4.glb",
+      "file": "FillingCabinet4"
+    },
+    {
+      "name": "FillingCabinet5",
+      "path": "Inside/FillingCabinet5.glb",
+      "file": "FillingCabinet5"
+    },
+    {
+      "name": "FillingCabinet6",
+      "path": "Inside/FillingCabinet6.glb",
+      "file": "FillingCabinet6"
+    },
+    {
+      "name": "FillingCabinet7",
+      "path": "Inside/FillingCabinet7.glb",
+      "file": "FillingCabinet7"
+    },
+    {
+      "name": "FillingCabinet8",
+      "path": "Inside/FillingCabinet8.glb",
+      "file": "FillingCabinet8"
+    },
+    {
+      "name": "FillingCabinetDeskComputer1",
+      "path": "Inside/FillingCabinetDeskComputer1.glb",
+      "file": "FillingCabinetDeskComputer1"
+    },
+    {
+      "name": "FillingCabinetDeskComputer2",
+      "path": "Inside/FillingCabinetDeskComputer2.glb",
+      "file": "FillingCabinetDeskComputer2"
+    },
+    {
+      "name": "FillingCabinetDeskComputer3",
+      "path": "Inside/FillingCabinetDeskComputer3.glb",
+      "file": "FillingCabinetDeskComputer3"
+    },
+    {
+      "name": "FillingCabinetDeskComputer4",
+      "path": "Inside/FillingCabinetDeskComputer4.glb",
+      "file": "FillingCabinetDeskComputer4"
+    },
+    {
+      "name": "FireExtinguisher1",
+      "path": "Inside/FireExtinguisher1.glb",
+      "file": "FireExtinguisher1"
+    },
+    {
+      "name": "FireExtinguisher2",
+      "path": "Inside/FireExtinguisher2.glb",
+      "file": "FireExtinguisher2"
+    },
+    {
+      "name": "FireExtinguisher3",
+      "path": "Inside/FireExtinguisher3.glb",
+      "file": "FireExtinguisher3"
+    },
+    {
+      "name": "FireExtinguisher4",
+      "path": "Inside/FireExtinguisher4.glb",
+      "file": "FireExtinguisher4"
+    },
+    {
+      "name": "GarbageCan1",
+      "path": "Inside/GarbageCan1.glb",
+      "file": "GarbageCan1"
+    },
+    {
+      "name": "GarbageCan2",
+      "path": "Inside/GarbageCan2.glb",
+      "file": "GarbageCan2"
+    },
+    {
+      "name": "GarbageCan3",
+      "path": "Inside/GarbageCan3.glb",
+      "file": "GarbageCan3"
+    },
+    {
+      "name": "OfficePlant1",
+      "path": "Inside/OfficePlant1.glb",
+      "file": "OfficePlant1"
+    },
+    {
+      "name": "OfficePlant2",
+      "path": "Inside/OfficePlant2.glb",
+      "file": "OfficePlant2"
+    },
+    {
+      "name": "OfficePlant3",
+      "path": "Inside/OfficePlant3.glb",
+      "file": "OfficePlant3"
+    },
+    {
+      "name": "ToiletSink1",
+      "path": "Inside/ToiletSink1.glb",
+      "file": "ToiletSink1"
+    },
+    {
+      "name": "Urinal1",
+      "path": "Inside/Urinal1.glb",
+      "file": "Urinal1"
+    },
+    {
+      "name": "VendingMachine1",
+      "path": "Inside/VendingMachine1.glb",
+      "file": "VendingMachine1"
+    },
+    {
+      "name": "VendingMachine2",
+      "path": "Inside/VendingMachine2.glb",
+      "file": "VendingMachine2"
+    }
+  ],
+  "Misc": [
+    {
+      "name": "Tin Man 1",
+      "path": "Misc/Tin_Man_1.glb",
+      "file": "Tin_Man_1"
+    },
+    {
+      "name": "Tin Man 2",
+      "path": "Misc/Tin_Man_2.glb",
+      "file": "Tin_Man_2"
+    },
+    {
+      "name": "Urinals",
+      "path": "Misc/Urinals.glb",
+      "file": "Urinals"
+    },
+    {
+      "name": "Hammer",
+      "path": "Misc/hammer_dcec7540_v1.glb",
+      "file": "hammer_dcec7540_v1"
+    },
+    {
+      "name": "Hammer",
+      "path": "Misc/hammer_dcec7540_v2.glb",
+      "file": "hammer_dcec7540_v2"
+    },
+    {
+      "name": "Hammer",
+      "path": "Misc/hammer_dcec7540_v3.glb",
+      "file": "hammer_dcec7540_v3"
+    },
+    {
+      "name": "Hammer",
+      "path": "Misc/hammer_dcec7540_v4.glb",
+      "file": "hammer_dcec7540_v4"
+    },
+    {
+      "name": "Pile Of Junk",
+      "path": "Misc/pile_of_junk_16785067_v2.glb",
+      "file": "pile_of_junk_16785067_v2"
+    },
+    {
+      "name": "Pile Of Junk",
+      "path": "Misc/pile_of_junk_16785067_v3.glb",
+      "file": "pile_of_junk_16785067_v3"
+    },
+    {
+      "name": "Sinks",
+      "path": "Misc/sinks.glb",
+      "file": "sinks"
+    },
+    {
+      "name": "Spray Paint Can",
+      "path": "Misc/spray_paint_can_47f1f987_v1.glb",
+      "file": "spray_paint_can_47f1f987_v1"
+    },
+    {
+      "name": "Spray Paint Can",
+      "path": "Misc/spray_paint_can_47f1f987_v2.glb",
+      "file": "spray_paint_can_47f1f987_v2"
+    },
+    {
+      "name": "Spray Paint Can",
+      "path": "Misc/spray_paint_can_47f1f987_v3.glb",
+      "file": "spray_paint_can_47f1f987_v3"
+    },
+    {
+      "name": "Spray Paint Can",
+      "path": "Misc/spray_paint_can_47f1f987_v4.glb",
+      "file": "spray_paint_can_47f1f987_v4"
+    }
+  ],
+  "Nature": [
+    {
+      "name": "Plants 3",
+      "path": "Nature/Plants_3.glb",
+      "file": "Plants_3"
+    },
+    {
+      "name": "Large Rock",
+      "path": "Nature/large_rock_051293c4_v1.glb",
+      "file": "large_rock_051293c4_v1"
+    },
+    {
+      "name": "Large Rock",
+      "path": "Nature/large_rock_051293c4_v2.glb",
+      "file": "large_rock_051293c4_v2"
+    },
+    {
+      "name": "Large Rock",
+      "path": "Nature/large_rock_051293c4_v3.glb",
+      "file": "large_rock_051293c4_v3"
+    },
+    {
+      "name": "Large Rock",
+      "path": "Nature/large_rock_051293c4_v4.glb",
+      "file": "large_rock_051293c4_v4"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_76eae03f_v1.glb",
+      "file": "large_rock_photographic_76eae03f_v1"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_76eae03f_v2.glb",
+      "file": "large_rock_photographic_76eae03f_v2"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_76eae03f_v3.glb",
+      "file": "large_rock_photographic_76eae03f_v3"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_76eae03f_v4.glb",
+      "file": "large_rock_photographic_76eae03f_v4"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_aa4b2613_v1.glb",
+      "file": "large_rock_photographic_aa4b2613_v1"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_aa4b2613_v2.glb",
+      "file": "large_rock_photographic_aa4b2613_v2"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_aa4b2613_v3.glb",
+      "file": "large_rock_photographic_aa4b2613_v3"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_aa4b2613_v4.glb",
+      "file": "large_rock_photographic_aa4b2613_v4"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_e7043c01_v1.glb",
+      "file": "large_rock_photographic_e7043c01_v1"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_e7043c01_v2.glb",
+      "file": "large_rock_photographic_e7043c01_v2"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_e7043c01_v3.glb",
+      "file": "large_rock_photographic_e7043c01_v3"
+    },
+    {
+      "name": "Large Rock Photographic",
+      "path": "Nature/large_rock_photographic_e7043c01_v4.glb",
+      "file": "large_rock_photographic_e7043c01_v4"
+    },
+    {
+      "name": "Large Rock Realistic Style",
+      "path": "Nature/large_rock_realistic_style_8c363a1f_v1.glb",
+      "file": "large_rock_realistic_style_8c363a1f_v1"
+    },
+    {
+      "name": "Large Rock Realistic Style",
+      "path": "Nature/large_rock_realistic_style_8c363a1f_v2.glb",
+      "file": "large_rock_realistic_style_8c363a1f_v2"
+    },
+    {
+      "name": "Large Rock Realistic Style",
+      "path": "Nature/large_rock_realistic_style_8c363a1f_v3.glb",
+      "file": "large_rock_realistic_style_8c363a1f_v3"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_90599d8a_v1.glb",
+      "file": "rocky_outcrop_90599d8a_v1"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_90599d8a_v2.glb",
+      "file": "rocky_outcrop_90599d8a_v2"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_90599d8a_v3.glb",
+      "file": "rocky_outcrop_90599d8a_v3"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_90599d8a_v4.glb",
+      "file": "rocky_outcrop_90599d8a_v4"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_b582bd01_v1.glb",
+      "file": "rocky_outcrop_b582bd01_v1"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_b582bd01_v2.glb",
+      "file": "rocky_outcrop_b582bd01_v2"
+    },
+    {
+      "name": "Rocky Outcrop",
+      "path": "Nature/rocky_outcrop_b582bd01_v4.glb",
+      "file": "rocky_outcrop_b582bd01_v4"
+    }
+  ],
+  "Outdoor": [
+    {
+      "name": "Cherub Fountain",
+      "path": "Outdoor/cherub_fountain_8d21b49f_v1.glb",
+      "file": "cherub_fountain_8d21b49f_v1"
+    },
+    {
+      "name": "Cherub Fountain",
+      "path": "Outdoor/cherub_fountain_8d21b49f_v2.glb",
+      "file": "cherub_fountain_8d21b49f_v2"
+    },
+    {
+      "name": "Cherub Fountain",
+      "path": "Outdoor/cherub_fountain_8d21b49f_v3.glb",
+      "file": "cherub_fountain_8d21b49f_v3"
+    },
+    {
+      "name": "Cherub Fountain",
+      "path": "Outdoor/cherub_fountain_8d21b49f_v4.glb",
+      "file": "cherub_fountain_8d21b49f_v4"
+    },
+    {
+      "name": "City Billboard",
+      "path": "Outdoor/city_billboard_a1ca8341_v1.glb",
+      "file": "city_billboard_a1ca8341_v1"
+    },
+    {
+      "name": "Emergency Staircase",
+      "path": "Outdoor/emergency_staircase_9228c6bf_v4.glb",
+      "file": "emergency_staircase_9228c6bf_v4"
+    },
+    {
+      "name": "Flat Rock Everyday Realistic Style",
+      "path": "Outdoor/flat_rock_everyday_realistic_style_4f55b9db_v1.glb",
+      "file": "flat_rock_everyday_realistic_style_4f55b9db_v1"
+    },
+    {
+      "name": "Flat Rock Everyday Realistic Style",
+      "path": "Outdoor/flat_rock_everyday_realistic_style_4f55b9db_v2.glb",
+      "file": "flat_rock_everyday_realistic_style_4f55b9db_v2"
+    },
+    {
+      "name": "Flat Rock Everyday Realistic Style",
+      "path": "Outdoor/flat_rock_everyday_realistic_style_4f55b9db_v3.glb",
+      "file": "flat_rock_everyday_realistic_style_4f55b9db_v3"
+    },
+    {
+      "name": "Flat Rock Everyday Realistic Style",
+      "path": "Outdoor/flat_rock_everyday_realistic_style_4f55b9db_v4.glb",
+      "file": "flat_rock_everyday_realistic_style_4f55b9db_v4"
+    },
+    {
+      "name": "Fountain",
+      "path": "Outdoor/fountain_12fc89f5_v1.glb",
+      "file": "fountain_12fc89f5_v1"
+    },
+    {
+      "name": "Fountain",
+      "path": "Outdoor/fountain_12fc89f5_v2.glb",
+      "file": "fountain_12fc89f5_v2"
+    },
+    {
+      "name": "Fountain",
+      "path": "Outdoor/fountain_12fc89f5_v3.glb",
+      "file": "fountain_12fc89f5_v3"
+    },
+    {
+      "name": "Fountain",
+      "path": "Outdoor/fountain_12fc89f5_v4.glb",
+      "file": "fountain_12fc89f5_v4"
+    },
+    {
+      "name": "Full Traffic Light",
+      "path": "Outdoor/full_traffic_light_bb6a606f_v1.glb",
+      "file": "full_traffic_light_bb6a606f_v1"
+    },
+    {
+      "name": "Full Traffic Light",
+      "path": "Outdoor/full_traffic_light_bb6a606f_v2.glb",
+      "file": "full_traffic_light_bb6a606f_v2"
+    },
+    {
+      "name": "Full Traffic Light",
+      "path": "Outdoor/full_traffic_light_bb6a606f_v4.glb",
+      "file": "full_traffic_light_bb6a606f_v4"
+    },
+    {
+      "name": "Garden Gnome Everyday Realistic Style",
+      "path": "Outdoor/garden_gnome_everyday_realistic_style_ae3edc0f_v1.glb",
+      "file": "garden_gnome_everyday_realistic_style_ae3edc0f_v1"
+    },
+    {
+      "name": "Garden Gnome Everyday Realistic Style",
+      "path": "Outdoor/garden_gnome_everyday_realistic_style_ae3edc0f_v2.glb",
+      "file": "garden_gnome_everyday_realistic_style_ae3edc0f_v2"
+    },
+    {
+      "name": "Garden Gnome Everyday Realistic Style",
+      "path": "Outdoor/garden_gnome_everyday_realistic_style_ae3edc0f_v3.glb",
+      "file": "garden_gnome_everyday_realistic_style_ae3edc0f_v3"
+    },
+    {
+      "name": "Garden Gnome Everyday Realistic Style",
+      "path": "Outdoor/garden_gnome_everyday_realistic_style_ae3edc0f_v4.glb",
+      "file": "garden_gnome_everyday_realistic_style_ae3edc0f_v4"
+    },
+    {
+      "name": "House With Garage Realistic Style",
+      "path": "Outdoor/house_with_garage_realistic_style_2c418de3_v1.glb",
+      "file": "house_with_garage_realistic_style_2c418de3_v1"
+    },
+    {
+      "name": "House With Garage Realistic Style",
+      "path": "Outdoor/house_with_garage_realistic_style_2c418de3_v2.glb",
+      "file": "house_with_garage_realistic_style_2c418de3_v2"
+    },
+    {
+      "name": "House With Garage Realistic Style",
+      "path": "Outdoor/house_with_garage_realistic_style_2c418de3_v3.glb",
+      "file": "house_with_garage_realistic_style_2c418de3_v3"
+    },
+    {
+      "name": "House With Garage Realistic Style",
+      "path": "Outdoor/house_with_garage_realistic_style_2c418de3_v4.glb",
+      "file": "house_with_garage_realistic_style_2c418de3_v4"
+    },
+    {
+      "name": "House With Garage Residential Realistic Style",
+      "path": "Outdoor/house_with_garage_residential_realistic_style_79ec16e3_v1.glb",
+      "file": "house_with_garage_residential_realistic_style_79ec16e3_v1"
+    },
+    {
+      "name": "House With Garage Residential Realistic Style",
+      "path": "Outdoor/house_with_garage_residential_realistic_style_79ec16e3_v2.glb",
+      "file": "house_with_garage_residential_realistic_style_79ec16e3_v2"
+    },
+    {
+      "name": "House With Garage Residential Realistic Style",
+      "path": "Outdoor/house_with_garage_residential_realistic_style_79ec16e3_v3.glb",
+      "file": "house_with_garage_residential_realistic_style_79ec16e3_v3"
+    },
+    {
+      "name": "House With Garage Residential Realistic Style",
+      "path": "Outdoor/house_with_garage_residential_realistic_style_79ec16e3_v4.glb",
+      "file": "house_with_garage_residential_realistic_style_79ec16e3_v4"
+    },
+    {
+      "name": "Iron Gate Realistic Style",
+      "path": "Outdoor/iron_gate_realistic_style_b0256527_v1.glb",
+      "file": "iron_gate_realistic_style_b0256527_v1"
+    },
+    {
+      "name": "Iron Gate Realistic Style",
+      "path": "Outdoor/iron_gate_realistic_style_b0256527_v2.glb",
+      "file": "iron_gate_realistic_style_b0256527_v2"
+    },
+    {
+      "name": "Iron Gate Realistic Style",
+      "path": "Outdoor/iron_gate_realistic_style_b0256527_v3.glb",
+      "file": "iron_gate_realistic_style_b0256527_v3"
+    },
+    {
+      "name": "Iron Gate Realistic Style",
+      "path": "Outdoor/iron_gate_realistic_style_b0256527_v4.glb",
+      "file": "iron_gate_realistic_style_b0256527_v4"
+    },
+    {
+      "name": "Mailbox Everyday Realistic Style",
+      "path": "Outdoor/mailbox_everyday_realistic_style_811c0cec_v1.glb",
+      "file": "mailbox_everyday_realistic_style_811c0cec_v1"
+    },
+    {
+      "name": "Mailbox Everyday Realistic Style",
+      "path": "Outdoor/mailbox_everyday_realistic_style_811c0cec_v2.glb",
+      "file": "mailbox_everyday_realistic_style_811c0cec_v2"
+    },
+    {
+      "name": "Mailbox Everyday Realistic Style",
+      "path": "Outdoor/mailbox_everyday_realistic_style_811c0cec_v3.glb",
+      "file": "mailbox_everyday_realistic_style_811c0cec_v3"
+    },
+    {
+      "name": "Mailbox Everyday Realistic Style",
+      "path": "Outdoor/mailbox_everyday_realistic_style_811c0cec_v4.glb",
+      "file": "mailbox_everyday_realistic_style_811c0cec_v4"
+    },
+    {
+      "name": "Manhole",
+      "path": "Outdoor/manhole_22435d2f_v2.glb",
+      "file": "manhole_22435d2f_v2"
+    },
+    {
+      "name": "Old Oil Barrel",
+      "path": "Outdoor/old_oil_barrel_a6459ce8_v1.glb",
+      "file": "old_oil_barrel_a6459ce8_v1"
+    },
+    {
+      "name": "Old Oil Barrel",
+      "path": "Outdoor/old_oil_barrel_a6459ce8_v2.glb",
+      "file": "old_oil_barrel_a6459ce8_v2"
+    },
+    {
+      "name": "Old Oil Barrel",
+      "path": "Outdoor/old_oil_barrel_a6459ce8_v3.glb",
+      "file": "old_oil_barrel_a6459ce8_v3"
+    },
+    {
+      "name": "Old Oil Barrel",
+      "path": "Outdoor/old_oil_barrel_a6459ce8_v4.glb",
+      "file": "old_oil_barrel_a6459ce8_v4"
+    },
+    {
+      "name": "Palisade Wall",
+      "path": "Outdoor/palisade_wall_151f582d_v1.glb",
+      "file": "palisade_wall_151f582d_v1"
+    },
+    {
+      "name": "Palisade Wall",
+      "path": "Outdoor/palisade_wall_151f582d_v2.glb",
+      "file": "palisade_wall_151f582d_v2"
+    },
+    {
+      "name": "Palisade Wall",
+      "path": "Outdoor/palisade_wall_151f582d_v3.glb",
+      "file": "palisade_wall_151f582d_v3"
+    },
+    {
+      "name": "Palisade Wall And Gate",
+      "path": "Outdoor/palisade_wall_and_gate_dd2bc927_v1.glb",
+      "file": "palisade_wall_and_gate_dd2bc927_v1"
+    },
+    {
+      "name": "Palisade Wall And Gate",
+      "path": "Outdoor/palisade_wall_and_gate_dd2bc927_v2.glb",
+      "file": "palisade_wall_and_gate_dd2bc927_v2"
+    },
+    {
+      "name": "Palisade Wall And Gate",
+      "path": "Outdoor/palisade_wall_and_gate_dd2bc927_v3.glb",
+      "file": "palisade_wall_and_gate_dd2bc927_v3"
+    },
+    {
+      "name": "Palisade Wall And Gate",
+      "path": "Outdoor/palisade_wall_and_gate_dd2bc927_v4.glb",
+      "file": "palisade_wall_and_gate_dd2bc927_v4"
+    },
+    {
+      "name": "Park Fountain",
+      "path": "Outdoor/park_fountain_c2664cc0_v1.glb",
+      "file": "park_fountain_c2664cc0_v1"
+    },
+    {
+      "name": "Park Fountain",
+      "path": "Outdoor/park_fountain_c2664cc0_v2.glb",
+      "file": "park_fountain_c2664cc0_v2"
+    },
+    {
+      "name": "Park Fountain",
+      "path": "Outdoor/park_fountain_c2664cc0_v3.glb",
+      "file": "park_fountain_c2664cc0_v3"
+    },
+    {
+      "name": "Park Fountain",
+      "path": "Outdoor/park_fountain_c2664cc0_v4.glb",
+      "file": "park_fountain_c2664cc0_v4"
+    },
+    {
+      "name": "Signpost Realistic Style",
+      "path": "Outdoor/signpost_realistic_style_b01d10de_v3.glb",
+      "file": "signpost_realistic_style_b01d10de_v3"
+    },
+    {
+      "name": "Signpost Realistic Style",
+      "path": "Outdoor/signpost_realistic_style_b01d10de_v4.glb",
+      "file": "signpost_realistic_style_b01d10de_v4"
+    },
+    {
+      "name": "Single Traffic Light Pole",
+      "path": "Outdoor/single_traffic_light_pole_37952056_v1.glb",
+      "file": "single_traffic_light_pole_37952056_v1"
+    },
+    {
+      "name": "Single Traffic Light Pole",
+      "path": "Outdoor/single_traffic_light_pole_37952056_v2.glb",
+      "file": "single_traffic_light_pole_37952056_v2"
+    },
+    {
+      "name": "Single Traffic Light Pole",
+      "path": "Outdoor/single_traffic_light_pole_37952056_v3.glb",
+      "file": "single_traffic_light_pole_37952056_v3"
+    },
+    {
+      "name": "Single Traffic Light Pole",
+      "path": "Outdoor/single_traffic_light_pole_37952056_v4.glb",
+      "file": "single_traffic_light_pole_37952056_v4"
+    },
+    {
+      "name": "Street Lamp Outdoor Realistic Style",
+      "path": "Outdoor/street_lamp_outdoor_realistic_style_b0e24458_v1.glb",
+      "file": "street_lamp_outdoor_realistic_style_b0e24458_v1"
+    },
+    {
+      "name": "Street Lamp Outdoor Realistic Style",
+      "path": "Outdoor/street_lamp_outdoor_realistic_style_b0e24458_v2.glb",
+      "file": "street_lamp_outdoor_realistic_style_b0e24458_v2"
+    },
+    {
+      "name": "Street Lamp Outdoor Realistic Style",
+      "path": "Outdoor/street_lamp_outdoor_realistic_style_b0e24458_v3.glb",
+      "file": "street_lamp_outdoor_realistic_style_b0e24458_v3"
+    },
+    {
+      "name": "Suburban House",
+      "path": "Outdoor/suburban_house_8766d2c3_v1.glb",
+      "file": "suburban_house_8766d2c3_v1"
+    },
+    {
+      "name": "Suburban House",
+      "path": "Outdoor/suburban_house_8766d2c3_v4.glb",
+      "file": "suburban_house_8766d2c3_v4"
+    },
+    {
+      "name": "Telephone Booth",
+      "path": "Outdoor/telephone_booth_8d5453e0_v1.glb",
+      "file": "telephone_booth_8d5453e0_v1"
+    },
+    {
+      "name": "Telephone Booth",
+      "path": "Outdoor/telephone_booth_8d5453e0_v2.glb",
+      "file": "telephone_booth_8d5453e0_v2"
+    },
+    {
+      "name": "Telephone Booth",
+      "path": "Outdoor/telephone_booth_8d5453e0_v3.glb",
+      "file": "telephone_booth_8d5453e0_v3"
+    },
+    {
+      "name": "Telephone Booth",
+      "path": "Outdoor/telephone_booth_8d5453e0_v4.glb",
+      "file": "telephone_booth_8d5453e0_v4"
+    },
+    {
+      "name": "Telephone Booth City Realistic Style",
+      "path": "Outdoor/telephone_booth_city_realistic_style_30e5b2f9_v1.glb",
+      "file": "telephone_booth_city_realistic_style_30e5b2f9_v1"
+    },
+    {
+      "name": "Telephone Booth City Realistic Style",
+      "path": "Outdoor/telephone_booth_city_realistic_style_30e5b2f9_v2.glb",
+      "file": "telephone_booth_city_realistic_style_30e5b2f9_v2"
+    },
+    {
+      "name": "Telephone Booth City Realistic Style",
+      "path": "Outdoor/telephone_booth_city_realistic_style_30e5b2f9_v3.glb",
+      "file": "telephone_booth_city_realistic_style_30e5b2f9_v3"
+    },
+    {
+      "name": "Telephone Booth City Realistic Style",
+      "path": "Outdoor/telephone_booth_city_realistic_style_30e5b2f9_v4.glb",
+      "file": "telephone_booth_city_realistic_style_30e5b2f9_v4"
+    },
+    {
+      "name": "Traffic Light",
+      "path": "Outdoor/traffic_light_b1babccc_v1.glb",
+      "file": "traffic_light_b1babccc_v1"
+    },
+    {
+      "name": "Traffic Light",
+      "path": "Outdoor/traffic_light_b1babccc_v2.glb",
+      "file": "traffic_light_b1babccc_v2"
+    },
+    {
+      "name": "Traffic Light",
+      "path": "Outdoor/traffic_light_b1babccc_v3.glb",
+      "file": "traffic_light_b1babccc_v3"
+    },
+    {
+      "name": "Traffic Light",
+      "path": "Outdoor/traffic_light_b1babccc_v4.glb",
+      "file": "traffic_light_b1babccc_v4"
+    },
+    {
+      "name": "Wooden Crate Outdoor Realistic Style",
+      "path": "Outdoor/wooden_crate_outdoor_realistic_style_03cf0918_v1.glb",
+      "file": "wooden_crate_outdoor_realistic_style_03cf0918_v1"
+    },
+    {
+      "name": "Wooden Crate Outdoor Realistic Style",
+      "path": "Outdoor/wooden_crate_outdoor_realistic_style_03cf0918_v2.glb",
+      "file": "wooden_crate_outdoor_realistic_style_03cf0918_v2"
+    },
+    {
+      "name": "Wooden Crate Outdoor Realistic Style",
+      "path": "Outdoor/wooden_crate_outdoor_realistic_style_03cf0918_v3.glb",
+      "file": "wooden_crate_outdoor_realistic_style_03cf0918_v3"
+    },
+    {
+      "name": "Wooden Crate Outdoor Realistic Style",
+      "path": "Outdoor/wooden_crate_outdoor_realistic_style_03cf0918_v4.glb",
+      "file": "wooden_crate_outdoor_realistic_style_03cf0918_v4"
+    }
+  ],
+  "Outside": [
+    {
+      "name": "BlueShippingContainer1",
+      "path": "Outside/BlueShippingContainer1.glb",
+      "file": "BlueShippingContainer1"
+    },
+    {
+      "name": "BlueShippingContainer2",
+      "path": "Outside/BlueShippingContainer2.glb",
+      "file": "BlueShippingContainer2"
+    },
+    {
+      "name": "BlueShippingContainer3",
+      "path": "Outside/BlueShippingContainer3.glb",
+      "file": "BlueShippingContainer3"
+    },
+    {
+      "name": "BlueShippingContainer4",
+      "path": "Outside/BlueShippingContainer4.glb",
+      "file": "BlueShippingContainer4"
+    },
+    {
+      "name": "BlueShippingContainer5",
+      "path": "Outside/BlueShippingContainer5.glb",
+      "file": "BlueShippingContainer5"
+    },
+    {
+      "name": "BlueShippingContainer6",
+      "path": "Outside/BlueShippingContainer6.glb",
+      "file": "BlueShippingContainer6"
+    },
+    {
+      "name": "BlueShippingContainer7",
+      "path": "Outside/BlueShippingContainer7.glb",
+      "file": "BlueShippingContainer7"
+    },
+    {
+      "name": "CityBench1",
+      "path": "Outside/CityBench1.glb",
+      "file": "CityBench1"
+    },
+    {
+      "name": "CityBench2",
+      "path": "Outside/CityBench2.glb",
+      "file": "CityBench2"
+    },
+    {
+      "name": "CityBench3",
+      "path": "Outside/CityBench3.glb",
+      "file": "CityBench3"
+    },
+    {
+      "name": "CityBench4",
+      "path": "Outside/CityBench4.glb",
+      "file": "CityBench4"
+    },
+    {
+      "name": "CrushedOilBarrel1",
+      "path": "Outside/CrushedOilBarrel1.glb",
+      "file": "CrushedOilBarrel1"
+    },
+    {
+      "name": "CrushedOilBarrel2",
+      "path": "Outside/CrushedOilBarrel2.glb",
+      "file": "CrushedOilBarrel2"
+    },
+    {
+      "name": "CrushedOilBarrel3",
+      "path": "Outside/CrushedOilBarrel3.glb",
+      "file": "CrushedOilBarrel3"
+    },
+    {
+      "name": "CrushedOilBarrel4",
+      "path": "Outside/CrushedOilBarrel4.glb",
+      "file": "CrushedOilBarrel4"
+    },
+    {
+      "name": "FireHydrant1",
+      "path": "Outside/FireHydrant1.glb",
+      "file": "FireHydrant1"
+    },
+    {
+      "name": "FireHydrant2",
+      "path": "Outside/FireHydrant2.glb",
+      "file": "FireHydrant2"
+    },
+    {
+      "name": "FireHydrant3",
+      "path": "Outside/FireHydrant3.glb",
+      "file": "FireHydrant3"
+    },
+    {
+      "name": "Rock1",
+      "path": "Outside/Rock1.glb",
+      "file": "Rock1"
+    },
+    {
+      "name": "Rock2",
+      "path": "Outside/Rock2.glb",
+      "file": "Rock2"
+    },
+    {
+      "name": "Rock3",
+      "path": "Outside/Rock3.glb",
+      "file": "Rock3"
+    },
+    {
+      "name": "Rock4",
+      "path": "Outside/Rock4.glb",
+      "file": "Rock4"
+    },
+    {
+      "name": "RustyOilBarrel1",
+      "path": "Outside/RustyOilBarrel1.glb",
+      "file": "RustyOilBarrel1"
+    },
+    {
+      "name": "RustyOilBarrel2",
+      "path": "Outside/RustyOilBarrel2.glb",
+      "file": "RustyOilBarrel2"
+    },
+    {
+      "name": "RustyOilBarrel3",
+      "path": "Outside/RustyOilBarrel3.glb",
+      "file": "RustyOilBarrel3"
+    },
+    {
+      "name": "RustyOilBarrel4",
+      "path": "Outside/RustyOilBarrel4.glb",
+      "file": "RustyOilBarrel4"
+    },
+    {
+      "name": "SmashedOilBarrel1",
+      "path": "Outside/SmashedOilBarrel1.glb",
+      "file": "SmashedOilBarrel1"
+    },
+    {
+      "name": "SmashedOilBarrel2",
+      "path": "Outside/SmashedOilBarrel2.glb",
+      "file": "SmashedOilBarrel2"
+    },
+    {
+      "name": "StadiumSeat1",
+      "path": "Outside/StadiumSeat1.glb",
+      "file": "StadiumSeat1"
+    },
+    {
+      "name": "StadiumSeat2",
+      "path": "Outside/StadiumSeat2.glb",
+      "file": "StadiumSeat2"
+    },
+    {
+      "name": "StadiumSeat3",
+      "path": "Outside/StadiumSeat3.glb",
+      "file": "StadiumSeat3"
+    },
+    {
+      "name": "StadiumSeat4",
+      "path": "Outside/StadiumSeat4.glb",
+      "file": "StadiumSeat4"
+    }
+  ],
+  "Sports": [
+    {
+      "name": "Football Pitch",
+      "path": "Sports/football_pitch_c2bf22d8_v1.glb",
+      "file": "football_pitch_c2bf22d8_v1"
+    },
+    {
+      "name": "Stadium Scoreboard",
+      "path": "Sports/stadium_scoreboard_8bd66713_v1.glb",
+      "file": "stadium_scoreboard_8bd66713_v1"
+    },
+    {
+      "name": "Stadium Scoreboard",
+      "path": "Sports/stadium_scoreboard_8bd66713_v2.glb",
+      "file": "stadium_scoreboard_8bd66713_v2"
+    },
+    {
+      "name": "Stadium Scoreboard",
+      "path": "Sports/stadium_scoreboard_8bd66713_v3.glb",
+      "file": "stadium_scoreboard_8bd66713_v3"
+    },
+    {
+      "name": "Stadium Scoreboard",
+      "path": "Sports/stadium_scoreboard_8bd66713_v4.glb",
+      "file": "stadium_scoreboard_8bd66713_v4"
+    }
+  ],
+  "Vehicles": [
+    {
+      "name": "BobcatDigger1",
+      "path": "Vehicles/BobcatDigger1.glb",
+      "file": "BobcatDigger1"
+    },
+    {
+      "name": "BrokenCar1",
+      "path": "Vehicles/BrokenCar1.glb",
+      "file": "BrokenCar1"
+    },
+    {
+      "name": "BrokenCar2",
+      "path": "Vehicles/BrokenCar2.glb",
+      "file": "BrokenCar2"
+    },
+    {
+      "name": "BrokenCar3",
+      "path": "Vehicles/BrokenCar3.glb",
+      "file": "BrokenCar3"
+    },
+    {
+      "name": "BrokenCar4",
+      "path": "Vehicles/BrokenCar4.glb",
+      "file": "BrokenCar4"
+    },
+    {
+      "name": "BrokenCar5",
+      "path": "Vehicles/BrokenCar5.glb",
+      "file": "BrokenCar5"
+    },
+    {
+      "name": "BrokenCar6",
+      "path": "Vehicles/BrokenCar6.glb",
+      "file": "BrokenCar6"
+    },
+    {
+      "name": "BrokenCar7",
+      "path": "Vehicles/BrokenCar7.glb",
+      "file": "BrokenCar7"
+    },
+    {
+      "name": "BrokenCar8",
+      "path": "Vehicles/BrokenCar8.glb",
+      "file": "BrokenCar8"
+    },
+    {
+      "name": "BrokenPickupTruck1",
+      "path": "Vehicles/BrokenPickupTruck1.glb",
+      "file": "BrokenPickupTruck1"
+    },
+    {
+      "name": "BrokenPickupTruck2",
+      "path": "Vehicles/BrokenPickupTruck2.glb",
+      "file": "BrokenPickupTruck2"
+    },
+    {
+      "name": "BrokenPickupTruck3",
+      "path": "Vehicles/BrokenPickupTruck3.glb",
+      "file": "BrokenPickupTruck3"
+    },
+    {
+      "name": "BrokenPickupTruck4",
+      "path": "Vehicles/BrokenPickupTruck4.glb",
+      "file": "BrokenPickupTruck4"
+    },
+    {
+      "name": "BrokenPickupTruck5",
+      "path": "Vehicles/BrokenPickupTruck5.glb",
+      "file": "BrokenPickupTruck5"
+    },
+    {
+      "name": "BrokenRustyCar1",
+      "path": "Vehicles/BrokenRustyCar1.glb",
+      "file": "BrokenRustyCar1"
+    },
+    {
+      "name": "BrokenRustyCar2",
+      "path": "Vehicles/BrokenRustyCar2.glb",
+      "file": "BrokenRustyCar2"
+    },
+    {
+      "name": "BrokenRustyCar3",
+      "path": "Vehicles/BrokenRustyCar3.glb",
+      "file": "BrokenRustyCar3"
+    },
+    {
+      "name": "BrokenRustyMinivan1",
+      "path": "Vehicles/BrokenRustyMinivan1.glb",
+      "file": "BrokenRustyMinivan1"
+    },
+    {
+      "name": "BrokenRustyMinivan2",
+      "path": "Vehicles/BrokenRustyMinivan2.glb",
+      "file": "BrokenRustyMinivan2"
+    },
+    {
+      "name": "BrokenRustyMinivan3",
+      "path": "Vehicles/BrokenRustyMinivan3.glb",
+      "file": "BrokenRustyMinivan3"
+    },
+    {
+      "name": "BrokenRustyMinivan4",
+      "path": "Vehicles/BrokenRustyMinivan4.glb",
+      "file": "BrokenRustyMinivan4"
+    },
+    {
+      "name": "BrokenRustyPickupTruck1",
+      "path": "Vehicles/BrokenRustyPickupTruck1.glb",
+      "file": "BrokenRustyPickupTruck1"
+    },
+    {
+      "name": "BrokenRustyPickupTruck2",
+      "path": "Vehicles/BrokenRustyPickupTruck2.glb",
+      "file": "BrokenRustyPickupTruck2"
+    },
+    {
+      "name": "BrokenRustyPickupTruck3",
+      "path": "Vehicles/BrokenRustyPickupTruck3.glb",
+      "file": "BrokenRustyPickupTruck3"
+    },
+    {
+      "name": "BrokenRustyPickupTruck4",
+      "path": "Vehicles/BrokenRustyPickupTruck4.glb",
+      "file": "BrokenRustyPickupTruck4"
+    },
+    {
+      "name": "RustyBus1",
+      "path": "Vehicles/RustyBus1.glb",
+      "file": "RustyBus1"
+    },
+    {
+      "name": "RustyCar1",
+      "path": "Vehicles/RustyCar1.glb",
+      "file": "RustyCar1"
+    },
+    {
+      "name": "RustyCar2",
+      "path": "Vehicles/RustyCar2.glb",
+      "file": "RustyCar2"
+    },
+    {
+      "name": "RustyCar3",
+      "path": "Vehicles/RustyCar3.glb",
+      "file": "RustyCar3"
+    },
+    {
+      "name": "RustyCar4",
+      "path": "Vehicles/RustyCar4.glb",
+      "file": "RustyCar4"
+    },
+    {
+      "name": "Bobcat Heavy Machinery Construction Vehicle Names The Bobcat ",
+      "path": "Vehicles/bobcat_heavy_machinery_construction_vehicle_names_the_bobcat__7f751c81_v2.glb",
+      "file": "bobcat_heavy_machinery_construction_vehicle_names_the_bobcat__7f751c81_v2"
+    },
+    {
+      "name": "Bobcat Heavy Machinery Construction Vehicle Names The Bobcat ",
+      "path": "Vehicles/bobcat_heavy_machinery_construction_vehicle_names_the_bobcat__7f751c81_v3.glb",
+      "file": "bobcat_heavy_machinery_construction_vehicle_names_the_bobcat__7f751c81_v3"
+    },
+    {
+      "name": "Broken Aeroplane",
+      "path": "Vehicles/broken_aeroplane_7b464903_v1.glb",
+      "file": "broken_aeroplane_7b464903_v1"
+    },
+    {
+      "name": "Broken Aeroplane",
+      "path": "Vehicles/broken_aeroplane_7b464903_v2.glb",
+      "file": "broken_aeroplane_7b464903_v2"
+    },
+    {
+      "name": "Broken Aeroplane",
+      "path": "Vehicles/broken_aeroplane_7b464903_v3.glb",
+      "file": "broken_aeroplane_7b464903_v3"
+    },
+    {
+      "name": "Broken Aeroplane",
+      "path": "Vehicles/broken_aeroplane_7b464903_v4.glb",
+      "file": "broken_aeroplane_7b464903_v4"
+    },
+    {
+      "name": "Broken Bycicle",
+      "path": "Vehicles/broken_bycicle_3b682d62_v2.glb",
+      "file": "broken_bycicle_3b682d62_v2"
+    },
+    {
+      "name": "Broken Bycicle",
+      "path": "Vehicles/broken_bycicle_3b682d62_v3.glb",
+      "file": "broken_bycicle_3b682d62_v3"
+    },
+    {
+      "name": "Broken Bycicle",
+      "path": "Vehicles/broken_bycicle_3b682d62_v4.glb",
+      "file": "broken_bycicle_3b682d62_v4"
+    },
+    {
+      "name": "Bycicle Everyday Realistic Style",
+      "path": "Vehicles/bycicle_everyday_realistic_style_a51f2edf_v2.glb",
+      "file": "bycicle_everyday_realistic_style_a51f2edf_v2"
+    },
+    {
+      "name": "Bycicle Everyday Realistic Style",
+      "path": "Vehicles/bycicle_everyday_realistic_style_a51f2edf_v3.glb",
+      "file": "bycicle_everyday_realistic_style_a51f2edf_v3"
+    },
+    {
+      "name": "Bycicle Everyday Realistic Style",
+      "path": "Vehicles/bycicle_everyday_realistic_style_a51f2edf_v4.glb",
+      "file": "bycicle_everyday_realistic_style_a51f2edf_v4"
+    },
+    {
+      "name": "Crashed Airplane",
+      "path": "Vehicles/crashed_airplane_832d0cc2_v1.glb",
+      "file": "crashed_airplane_832d0cc2_v1"
+    },
+    {
+      "name": "Crashed Airplane",
+      "path": "Vehicles/crashed_airplane_832d0cc2_v2.glb",
+      "file": "crashed_airplane_832d0cc2_v2"
+    },
+    {
+      "name": "Crashed Airplane",
+      "path": "Vehicles/crashed_airplane_832d0cc2_v3.glb",
+      "file": "crashed_airplane_832d0cc2_v3"
+    },
+    {
+      "name": "Crashed Airplane",
+      "path": "Vehicles/crashed_airplane_832d0cc2_v4.glb",
+      "file": "crashed_airplane_832d0cc2_v4"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_93a95d9d_v1.glb",
+      "file": "crashed_motorbike_93a95d9d_v1"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_93a95d9d_v2.glb",
+      "file": "crashed_motorbike_93a95d9d_v2"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_93a95d9d_v3.glb",
+      "file": "crashed_motorbike_93a95d9d_v3"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_93a95d9d_v4.glb",
+      "file": "crashed_motorbike_93a95d9d_v4"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_fe109b2a_v1.glb",
+      "file": "crashed_motorbike_fe109b2a_v1"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_fe109b2a_v2.glb",
+      "file": "crashed_motorbike_fe109b2a_v2"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_fe109b2a_v3.glb",
+      "file": "crashed_motorbike_fe109b2a_v3"
+    },
+    {
+      "name": "Crashed Motorbike",
+      "path": "Vehicles/crashed_motorbike_fe109b2a_v4.glb",
+      "file": "crashed_motorbike_fe109b2a_v4"
+    },
+    {
+      "name": "Crashed Prop Plane That Would Fit In A Junkyard",
+      "path": "Vehicles/crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v1.glb",
+      "file": "crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v1"
+    },
+    {
+      "name": "Crashed Prop Plane That Would Fit In A Junkyard",
+      "path": "Vehicles/crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v2.glb",
+      "file": "crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v2"
+    },
+    {
+      "name": "Crashed Prop Plane That Would Fit In A Junkyard",
+      "path": "Vehicles/crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v3.glb",
+      "file": "crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v3"
+    },
+    {
+      "name": "Crashed Prop Plane That Would Fit In A Junkyard",
+      "path": "Vehicles/crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v4.glb",
+      "file": "crashed_prop_plane_that_would_fit_in_a_junkyard_e68cfeb9_v4"
+    },
+    {
+      "name": "Rusty Tank",
+      "path": "Vehicles/rusty_tank_07f4bc3d_v1.glb",
+      "file": "rusty_tank_07f4bc3d_v1"
+    },
+    {
+      "name": "Rusty Tank",
+      "path": "Vehicles/rusty_tank_07f4bc3d_v2.glb",
+      "file": "rusty_tank_07f4bc3d_v2"
+    },
+    {
+      "name": "Rusty Tank",
+      "path": "Vehicles/rusty_tank_07f4bc3d_v3.glb",
+      "file": "rusty_tank_07f4bc3d_v3"
+    },
+    {
+      "name": "Rusty Tank",
+      "path": "Vehicles/rusty_tank_07f4bc3d_v4.glb",
+      "file": "rusty_tank_07f4bc3d_v4"
+    }
+  ],
+  "Weapons": [
+    {
+      "name": "Baseball Bat",
+      "path": "Weapons/baseball_bat_0ff8246f_v1.glb",
+      "file": "baseball_bat_0ff8246f_v1"
+    },
+    {
+      "name": "Baseball Bat",
+      "path": "Weapons/baseball_bat_0ff8246f_v2.glb",
+      "file": "baseball_bat_0ff8246f_v2"
+    },
+    {
+      "name": "Baseball Bat",
+      "path": "Weapons/baseball_bat_0ff8246f_v3.glb",
+      "file": "baseball_bat_0ff8246f_v3"
+    },
+    {
+      "name": "Baseball Bat",
+      "path": "Weapons/baseball_bat_0ff8246f_v4.glb",
+      "file": "baseball_bat_0ff8246f_v4"
+    },
+    {
+      "name": "Carbine Rifle",
+      "path": "Weapons/carbine_rifle_a90d2831_v1.glb",
+      "file": "carbine_rifle_a90d2831_v1"
+    },
+    {
+      "name": "Carbine Rifle",
+      "path": "Weapons/carbine_rifle_a90d2831_v2.glb",
+      "file": "carbine_rifle_a90d2831_v2"
+    },
+    {
+      "name": "Carbine Rifle",
+      "path": "Weapons/carbine_rifle_a90d2831_v3.glb",
+      "file": "carbine_rifle_a90d2831_v3"
+    },
+    {
+      "name": "Carbine Rifle",
+      "path": "Weapons/carbine_rifle_a90d2831_v4.glb",
+      "file": "carbine_rifle_a90d2831_v4"
+    },
+    {
+      "name": "Colt 45 Revolver",
+      "path": "Weapons/colt_45_revolver_71083f71_v1.glb",
+      "file": "colt_45_revolver_71083f71_v1"
+    },
+    {
+      "name": "Colt 45 Revolver",
+      "path": "Weapons/colt_45_revolver_71083f71_v2.glb",
+      "file": "colt_45_revolver_71083f71_v2"
+    },
+    {
+      "name": "Colt 45 Revolver",
+      "path": "Weapons/colt_45_revolver_71083f71_v3.glb",
+      "file": "colt_45_revolver_71083f71_v3"
+    },
+    {
+      "name": "Colt 45 Revolver",
+      "path": "Weapons/colt_45_revolver_71083f71_v4.glb",
+      "file": "colt_45_revolver_71083f71_v4"
+    },
+    {
+      "name": "Grenade",
+      "path": "Weapons/grenade_d45ac7d5_v1.glb",
+      "file": "grenade_d45ac7d5_v1"
+    },
+    {
+      "name": "Grenade",
+      "path": "Weapons/grenade_d45ac7d5_v2.glb",
+      "file": "grenade_d45ac7d5_v2"
+    },
+    {
+      "name": "Grenade",
+      "path": "Weapons/grenade_d45ac7d5_v3.glb",
+      "file": "grenade_d45ac7d5_v3"
+    },
+    {
+      "name": "Grenade",
+      "path": "Weapons/grenade_d45ac7d5_v4.glb",
+      "file": "grenade_d45ac7d5_v4"
+    },
+    {
+      "name": "Machete",
+      "path": "Weapons/machete_2dab895b_v1.glb",
+      "file": "machete_2dab895b_v1"
+    },
+    {
+      "name": "Machete",
+      "path": "Weapons/machete_2dab895b_v2.glb",
+      "file": "machete_2dab895b_v2"
+    },
+    {
+      "name": "Machete",
+      "path": "Weapons/machete_2dab895b_v3.glb",
+      "file": "machete_2dab895b_v3"
+    },
+    {
+      "name": "Machete",
+      "path": "Weapons/machete_2dab895b_v4.glb",
+      "file": "machete_2dab895b_v4"
+    },
+    {
+      "name": "Musket Rifle",
+      "path": "Weapons/musket_rifle_11b81839_v1.glb",
+      "file": "musket_rifle_11b81839_v1"
+    },
+    {
+      "name": "Musket Rifle",
+      "path": "Weapons/musket_rifle_11b81839_v2.glb",
+      "file": "musket_rifle_11b81839_v2"
+    },
+    {
+      "name": "Musket Rifle",
+      "path": "Weapons/musket_rifle_11b81839_v3.glb",
+      "file": "musket_rifle_11b81839_v3"
+    },
+    {
+      "name": "Musket Rifle",
+      "path": "Weapons/musket_rifle_11b81839_v4.glb",
+      "file": "musket_rifle_11b81839_v4"
+    },
+    {
+      "name": "Primitive Arrow",
+      "path": "Weapons/primitive_arrow_e6a0532e_v1.glb",
+      "file": "primitive_arrow_e6a0532e_v1"
+    },
+    {
+      "name": "Primitive Arrow",
+      "path": "Weapons/primitive_arrow_e6a0532e_v2.glb",
+      "file": "primitive_arrow_e6a0532e_v2"
+    },
+    {
+      "name": "Primitive Arrow",
+      "path": "Weapons/primitive_arrow_e6a0532e_v3.glb",
+      "file": "primitive_arrow_e6a0532e_v3"
+    },
+    {
+      "name": "Primitive Arrow",
+      "path": "Weapons/primitive_arrow_e6a0532e_v4.glb",
+      "file": "primitive_arrow_e6a0532e_v4"
+    },
+    {
+      "name": "Primitive Axe",
+      "path": "Weapons/primitive_axe_16832930_v1.glb",
+      "file": "primitive_axe_16832930_v1"
+    },
+    {
+      "name": "Primitive Axe",
+      "path": "Weapons/primitive_axe_16832930_v2.glb",
+      "file": "primitive_axe_16832930_v2"
+    },
+    {
+      "name": "Primitive Axe",
+      "path": "Weapons/primitive_axe_16832930_v3.glb",
+      "file": "primitive_axe_16832930_v3"
+    },
+    {
+      "name": "Primitive Axe",
+      "path": "Weapons/primitive_axe_16832930_v4.glb",
+      "file": "primitive_axe_16832930_v4"
+    },
+    {
+      "name": "Primitive Hammer",
+      "path": "Weapons/primitive_hammer_03695747_v1.glb",
+      "file": "primitive_hammer_03695747_v1"
+    },
+    {
+      "name": "Primitive Hammer",
+      "path": "Weapons/primitive_hammer_03695747_v2.glb",
+      "file": "primitive_hammer_03695747_v2"
+    },
+    {
+      "name": "Primitive Hammer",
+      "path": "Weapons/primitive_hammer_03695747_v3.glb",
+      "file": "primitive_hammer_03695747_v3"
+    },
+    {
+      "name": "Primitive Hammer",
+      "path": "Weapons/primitive_hammer_03695747_v4.glb",
+      "file": "primitive_hammer_03695747_v4"
+    },
+    {
+      "name": "Shield Primitive Realistic Style",
+      "path": "Weapons/shield_primitive_realistic_style_13d12365_v4.glb",
+      "file": "shield_primitive_realistic_style_13d12365_v4"
+    },
+    {
+      "name": "Shotgun",
+      "path": "Weapons/shotgun_6d14294c_v3.glb",
+      "file": "shotgun_6d14294c_v3"
+    },
+    {
+      "name": "Sword Realistic Style",
+      "path": "Weapons/sword_realistic_style_c8160504_v1.glb",
+      "file": "sword_realistic_style_c8160504_v1"
+    },
+    {
+      "name": "Sword Realistic Style",
+      "path": "Weapons/sword_realistic_style_c8160504_v2.glb",
+      "file": "sword_realistic_style_c8160504_v2"
+    },
+    {
+      "name": "Sword Realistic Style",
+      "path": "Weapons/sword_realistic_style_c8160504_v3.glb",
+      "file": "sword_realistic_style_c8160504_v3"
+    },
+    {
+      "name": "Sword Realistic Style",
+      "path": "Weapons/sword_realistic_style_c8160504_v4.glb",
+      "file": "sword_realistic_style_c8160504_v4"
+    }
+  ]
+}
