@@ -4,3 +4,6 @@ assetsSORT.blend1
 
 .code-search/
 .claude/
+scripts/continue-chain.sh
+scripts/loop-chain.sh
+scripts/push-orphan-via-chain.sh
