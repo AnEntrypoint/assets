@@ -1,5 +1,13 @@
 name: Deploy to GitHub Pages
 
+# Publishes the cluster-LOD asset corpus (streaming-cluster/*.cluster.glb) as a
+# static site at https://anentrypoint.github.io/assets/. Serves:
+#   - manifest.json      unified {Category:[{name,path,thumb}]} model index
+#   - streaming-cluster/ the .cluster.glb bytes (EP_cluster_lod + EXT_meshopt_compression)
+#   - thumbs/            256px PNG per model (LOD0 render via model-viewer)
+# The streaming-gltf demo and the spoint editor both fetch manifest.json from
+# here and stream the cluster GLBs cross-origin.
+
 on:
   push:
     branches: [master]
@@ -24,17 +32,17 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Compute GLB cache key
+      - name: Compute cluster-GLB cache key
         id: glb-hash
-        run: echo "hash=$(git ls-files '*.glb' | sort | xargs sha256sum | sha256sum | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+        run: echo "hash=$(git ls-files 'streaming-cluster/*.cluster.glb' | sort | xargs sha256sum | sha256sum | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
 
       - name: Restore thumbnail cache
         id: thumb-cache
         uses: actions/cache@v4.2.3
         with:
           path: docs/thumbs
-          key: thumbs-${{ steps.glb-hash.outputs.hash }}
-          restore-keys: thumbs-
+          key: thumbs-cluster-${{ steps.glb-hash.outputs.hash }}
+          restore-keys: thumbs-cluster-
 
       - name: Install Playwright
         if: steps.thumb-cache.outputs.cache-hit != 'true'
@@ -42,65 +50,24 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Generate thumbnails
+      - name: Generate thumbnails (LOD0 of each cluster GLB)
         if: steps.thumb-cache.outputs.cache-hit != 'true'
         run: |
-          mkdir -p docs/thumbs
-          git ls-files "*.glb" | while IFS= read -r glb; do
-            mkdir -p "docs/thumbs/$(dirname "$glb")"
+          git ls-files "streaming-cluster/*.cluster.glb" | while IFS= read -r glb; do
             out="docs/thumbs/${glb%.glb}.png"
             [ -f "$out" ] && continue
+            mkdir -p "$(dirname "$out")"
             echo "Rendering $glb"
             node docs/render-glb.js "$glb" "$out" 256 256 || echo "WARN: failed $glb"
           done
 
-      - name: Generate asset manifest and model list
-        run: |
-          node - <<'SCRIPT'
-          const { execSync } = require('child_process');
-          const fs = require('fs');
-          const files = execSync('git ls-files "*.glb"').toString().trim().split('\n').filter(Boolean);
-          const manifest = {};
-          const byCategory = {};
-          for (const f of files) {
-            const cat = f.split('/')[0];
-            const base = f.split('/').pop().replace(/\.glb$/, '');
-            const name = base
-              .replace(/_[a-f0-9]{8}_v\d+$/, '')
-              .replace(/_v\d+$/, '')
-              .replace(/[_-]/g, ' ')
-              .replace(/\b\w/g, c => c.toUpperCase());
-            const thumb = `thumbs/${f.replace(/\.glb$/, '.png')}`;
-            const entry = { name, path: f, thumb };
-            if (!manifest[cat]) manifest[cat] = [];
-            manifest[cat].push(entry);
-            if (!byCategory[cat]) byCategory[cat] = [];
-            byCategory[cat].push({ name, path: f, thumb });
-          }
-          fs.writeFileSync('docs/manifest.json', JSON.stringify(manifest));
-          const lines = ['# Auto-generated model list', ''];
-          for (const [cat, entries] of Object.entries(byCategory).sort()) {
-            lines.push(`${cat}:`);
-            for (const e of entries) {
-              lines.push(`  - name: ${JSON.stringify(e.name)}`);
-              lines.push(`    path: ${e.path}`);
-              lines.push(`    thumb: ${e.thumb}`);
-            }
-            lines.push('');
-          }
-          fs.writeFileSync('docs/model-list.yaml', lines.join('\n'));
-          console.log('Total assets:', Object.values(manifest).flat().length);
-          SCRIPT
+      - name: Generate unified manifest into docs/
+        run: node docs/gen-manifest.js docs/manifest.json
 
-      - name: Copy streaming bakes + baked manifest into docs/
+      - name: Copy cluster GLBs into docs/
         run: |
-          if [ -d streaming ]; then
-            mkdir -p docs/streaming
-            cp -r streaming/* docs/streaming/
-          fi
-          if [ -f manifest.baked.json ]; then
-            cp manifest.baked.json docs/manifest.baked.json
-          fi
+          mkdir -p docs/streaming-cluster
+          cp streaming-cluster/*.cluster.glb docs/streaming-cluster/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
