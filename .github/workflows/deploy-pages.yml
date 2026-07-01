@@ -32,35 +32,8 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Compute cluster-GLB cache key
-        id: glb-hash
-        run: echo "hash=$(git ls-files 'streaming-cluster/*.cluster.glb' | sort | xargs sha256sum | sha256sum | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
-
-      - name: Restore thumbnail cache
-        id: thumb-cache
-        uses: actions/cache@v4.2.3
-        with:
-          path: docs/thumbs
-          key: thumbs-cluster-${{ steps.glb-hash.outputs.hash }}
-          restore-keys: thumbs-cluster-
-
-      - name: Install Playwright
-        if: steps.thumb-cache.outputs.cache-hit != 'true'
-        run: |
-          npm install playwright
-          npx playwright install --with-deps chromium
-
-      - name: Generate thumbnails (LOD0 of each cluster GLB)
-        if: steps.thumb-cache.outputs.cache-hit != 'true'
-        run: |
-          git ls-files "streaming-cluster/*.cluster.glb" | while IFS= read -r glb; do
-            out="docs/thumbs/${glb%.glb}.png"
-            [ -f "$out" ] && continue
-            mkdir -p "$(dirname "$out")"
-            echo "Rendering $glb"
-            node docs/render-glb.js "$glb" "$out" 256 256 || echo "WARN: failed $glb"
-          done
-
+      # --- Publish-critical: manifest + GLB bytes first, so the deploy NEVER
+      # waits on thumbnail rendering. These are fast (seconds).
       - name: Generate unified manifest into docs/
         run: node docs/gen-manifest.js docs/manifest.json
 
@@ -68,6 +41,41 @@ jobs:
         run: |
           mkdir -p docs/streaming-cluster
           cp streaming-cluster/*.cluster.glb docs/streaming-cluster/
+
+      # --- Best-effort thumbnails: capped per run + cached across runs so they
+      # backfill incrementally over successive pushes. A slow/failed render
+      # (continue-on-error) never gates the deploy; the editor/demo tolerate
+      # missing thumbs (labels + img.onerror). THUMB_BUDGET caps renders/run.
+      - name: Restore thumbnail cache
+        id: thumb-cache
+        uses: actions/cache@v4.2.3
+        with:
+          path: docs/thumbs
+          key: thumbs-cluster-${{ github.sha }}
+          restore-keys: thumbs-cluster-
+
+      - name: Install Playwright
+        continue-on-error: true
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Generate thumbnails (best-effort, capped)
+        continue-on-error: true
+        timeout-minutes: 8
+        env:
+          THUMB_BUDGET: '150'
+        run: |
+          n=0
+          git ls-files "streaming-cluster/*.cluster.glb" | while IFS= read -r glb; do
+            out="docs/thumbs/${glb%.glb}.png"
+            [ -f "$out" ] && continue
+            [ "$n" -ge "$THUMB_BUDGET" ] && { echo "budget $THUMB_BUDGET reached; remaining backfill next run"; break; }
+            mkdir -p "$(dirname "$out")"
+            echo "Rendering $glb"
+            node docs/render-glb.js "$glb" "$out" 256 256 || echo "WARN: failed $glb"
+            n=$((n+1))
+          done
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
