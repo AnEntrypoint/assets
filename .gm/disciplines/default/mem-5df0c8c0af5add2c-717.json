@@ -1,0 +1,3 @@
+## Resolved mutable: mut-1783088527828
+
+npm publish remains blocked in this session (no credentials, npm whoami 401). streaming-gltf 2.0.17 is committed and pushed to origin/master (verified via git_finalize) but not published to the npm registry. spoint's package.json intentionally NOT bumped to reference it (would break npm install for anyone pulling spoint fresh) -- this was verified and documented as a deliberate follow-up in prd-resolve row spoint-pin-bump-post-occlusion-release from the prior session. Scoping decision: publishing requires the user's own npm credentials/action, genuinely blockedBy:external, not something resolvable from this session. Tracked as an explicit outstanding step for the user.
