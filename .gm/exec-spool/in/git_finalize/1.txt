@@ -1,1 +1,0 @@
-{"message":"chore: bootstrap gm-plugkit, prune obsolete cluster-lod and master-chain branches\n\nDeleted cluster-lod (local+origin, fully superseded by master) and\nmaster-chain (orphan raw-source-GLB history predating the cluster-only\npurge). Repo now carries a single branch, master."}
