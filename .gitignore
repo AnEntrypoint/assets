@@ -14,3 +14,4 @@ scripts/push-orphan-via-chain.sh
 .gm/last-dispatch-ts
 .gm/last-instruction-ts
 .gm/turn-state.json
+.gm/residual-check-fired
