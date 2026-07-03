@@ -1,1 +1,1 @@
-make sure ../spoint and ../mapspinner is fully set up and up to date and working with our changes, and makes full benefit of our culling optimizations and contributes and also culls in the same way
+models must cull vegetation, and terrain, so that if there's a big wall, it culls whats behind it (occlusion culling: a model like a wall should occlude vegetation/terrain rendering behind it, not just cull itself)

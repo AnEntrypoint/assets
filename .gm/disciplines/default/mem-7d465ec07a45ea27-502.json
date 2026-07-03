@@ -1,0 +1,3 @@
+## Resolved mutable: mut-1783088640681
+
+planet-orchestrator.js:opts.occlusionPredicate hook added in per-leaf loop before quad emit (verified via Read + node --check pass); TerrainOcclusion.js beginFrame/testAndReissue/endFrame implementation created and syntax-checked; TerrainBackdrop.js wires beginFrame before planet.frame() and endFrame after, threading occlusionPredicate into initMapspinnerPlanet opts; node scripts/check.mjs confirms 250 files parse cleanly including all three edited/new files
