@@ -11,3 +11,4 @@ scripts/push-orphan-via-chain.sh
 
 # gm managed block: transient spool runtime, never tracked
 .gm/exec-spool/
+.gm/last-dispatch-ts
