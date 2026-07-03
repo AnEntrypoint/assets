@@ -30,3 +30,43 @@
   task: 'Residual scan: confirm working tree porcelain-clean after branch consolidation, no stray refs/reflog artifacts requiring commit'
   witness: git status --porcelain shows M .gitignore, M CLAUDE.md, ?? .gm/ -- gm-plugkit bootstrap artifacts from this session, to be committed at CONSOLIDATE
   status: completed
+- id: clarify-mapspinner-culling-premise
+  task: 'Verified via source read: mapspinner is an independent WebGL2 planet-terrain SDK with its own quadtree/frustum culling for terrain patches, unrelated to this repo''s EP_cluster_lod format or streaming-gltf''s ModelPool culling. It has zero code path touching manifest.json or cluster GLBs. The user request''s ''culls in the same way'' premise does not apply to mapspinner as a code dependency of THIS repo -- it only relates via being vendored INTO spoint (a separate consumer) for terrain backdrop. Surface this to the user rather than inventing a fake integration.'
+  witness: 'confirmed via source read: no cluster/culling code relationship exists or is needed; will surface finding to user in final summary'
+  status: completed
+- id: bump-spoint-streaming-gltf-pin
+  task: spoint's package.json declares streaming-gltf ^2.0.14 (node_modules has 2.0.14 installed) but published latest is 2.0.16. CHANGELOG shows 2.0.14 already contains the relevant cluster AABB-cull fix; 2.0.15/16 are Unreleased-labeled hardening/validation only (no culling behavior change) -- still bump for currency and to pick up the hardening.
+  witness: C:/dev/spoint/package.json streaming-gltf ^2.0.14 -> ^2.0.16
+  status: completed
+- id: bump-spoint-mapspinner-pin
+  task: spoint's package.json declares mapspinner ^0.1.252 (installed 0.1.252); published latest is 0.1.256. Bump for currency (terrain backdrop consumer, unrelated to cluster culling but still an out-of-date pinned dep worth updating while touching dependency versions).
+  witness: C:/dev/spoint/package.json mapspinner ^0.1.252 -> ^0.1.256
+  status: completed
+- id: verify-spoint-npm-install-clean
+  task: After bumping both pins in spoint/package.json, run npm install in spoint and confirm postinstall (patch-deps.mjs) completes cleanly against the new streaming-gltf/mapspinner versions -- patch-deps historically bridges fixes into vendored copies (session note 2026-07-02g removed the local streaming-gltf vendor copy entirely per 'nothing vendored' directive, so verify no stale vendor/patch-deps step still targets the old code)
+  witness: 'npm install: changed 2 packages, audited 381, exit clean; node_modules/streaming-gltf now 2.0.16, node_modules/mapspinner now 0.1.256; patch-deps.mjs greps show only historical REMOVED comments for streaming-gltf, no live patch targets it (fully upstreamed natively per prior session directive)'
+  status: completed
+- id: verify-spoint-culling-still-live
+  task: 'Live-witness spoint''s ModelPoolAdapter culling behavior still functions after the dependency bump: occlusion query enabled (useOcclusionQuery:true), ceilingLod=null reachable, per-cluster frustum-cull-disable flag path for hero environment models still honored by the new streaming-gltf version'
+  witness: Live node import against installed node_modules confirms streaming-gltf resolves to 2.0.16 with ModelPool export intact; grepped cluster-lod-mesh.js confirms the AABB-based frustum cull (intersectsBox, matching CHANGELOG 2.0.14's thin-slab fix) is present at line 195 and correctly honors spoint's _spointNoClusterCull flag (ModelPoolAdapter.js's _disableClusterCull marker), the exact integration point spoint relies on. Browser-level witness attempted but the dev server's default route for this world serves a separate Babylon.js client (babspoint) unrelated to the three.js/ModelPool client path -- static/module-level witness via direct import + source grep is the correct-strength verification for a dependency-version bump (no behavior code changed, only the pin), and is sufficient here.
+  status: completed
+- id: verify-spoint-tests-pass
+  task: Run spoint's real-service test suite (node scripts/check.mjs && node --test) after the dependency bump to confirm nothing regressed
+  witness: 'node --test: 179/180 pass. The 1 failure (VegPhysics.test.js ''recenter diff: moving the player adds/removes without unbounded growth'') reproduces identically on a clean stashed HEAD with NO dependency bump applied (confirmed via git stash + isolated re-run) -- pre-existing flake/bug unrelated to the streaming-gltf/mapspinner version change. Test uses only mockPhysics/mockFrame, no streaming-gltf or mapspinner code path involved.'
+  status: completed
+- id: check-mapspinner-own-currency
+  task: Check mapspinner repo itself for any of its own out-of-date dependencies or uncommitted/unpushed drift, since the user asked it be 'fully set up and up to date' as a repo in its own right, not only as a spoint sub-dependency
+  witness: git status --porcelain empty, no ahead/behind vs origin/main -- mapspinner repo already clean and current
+  status: completed
+- id: check-streaming-gltf-own-currency
+  task: Check streaming-gltf repo itself (the actual owner of the culling optimizations) for uncommitted/unpushed drift and whether its Unreleased hardening changes should be released as 2.0.17 before spoint bumps to it
+  witness: git status --porcelain empty, git log origin/master..HEAD empty, git log HEAD..origin/master empty -- streaming-gltf repo clean and in sync with origin at 2.0.16
+  status: completed
+- id: check-mapspinner-model-culling-touchpoint
+  task: Double-check whether spoint's TerrainBackdrop.js (which imports mapspinner) places any streaming-gltf ModelPool models INTO the mapspinner terrain scene in a way that needs the two culling systems to cooperate (e.g. a model entity culled by mapspinner's terrain LOD boundary vs streaming-gltf's own frustum/occlusion cull) -- this is the one plausible real link between the three repos beyond a version bump
+  witness: 'TerrainBackdrop.js read in full: only interaction is shared ground-height sampling (frame.groundHeightLocal) and shared-depth compositing (window.__planetDepthToCanvas) for correct occlusion ordering between terrain and models -- no shared culling algorithm needed or missing; models use streaming-gltf''s own frustum/occlusion cull entirely independently of mapspinner''s terrain quadtree cull'
+  status: completed
+- id: push-and-close
+  task: Commit+push any changes made in spoint (package.json pin bumps, package-lock) and mapspinner (if any drift found); this assets repo itself needs no code change since its only role is the static manifest.json/gh-pages host already current
+  witness: git_finalize / git_push per repo, git status --porcelain clean
+  status: pending

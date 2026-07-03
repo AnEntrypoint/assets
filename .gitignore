@@ -15,3 +15,6 @@ scripts/push-orphan-via-chain.sh
 .gm/last-instruction-ts
 .gm/turn-state.json
 .gm/residual-check-fired
+.gm/browser-profile/
+.gm/browser-profile-*/
+.gm/browser-state/

@@ -1,1 +1,1 @@
-consolidate/remove all branches
+make sure ../spoint and ../mapspinner is fully set up and up to date and working with our changes, and makes full benefit of our culling optimizations and contributes and also culls in the same way
