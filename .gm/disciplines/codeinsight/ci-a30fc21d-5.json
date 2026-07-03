@@ -1,0 +1,7 @@
+docs/lib/webjsx/utils.js:56:61 isNonBooleanPrimitive
+function isNonBooleanPrimitive(vnode) {
+    const typeofVNode = typeof vnode;
+    return (typeofVNode === "string" ||
+        typeofVNode === "number" ||
+        typeofVNode === "bigint");
+}

@@ -1,0 +1,4 @@
+docs/lib/webjsx/jsx-runtime.js:26:28 jsxDEV
+function jsxDEV(type, props, key) {
+    return jsx(type, props, key);
+}

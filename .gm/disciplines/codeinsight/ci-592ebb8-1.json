@@ -1,0 +1,11 @@
+docs/lib/webjsx/attributes.js:128:137 setAttributes
+function setAttributes(el, props) {
+    if (definesRenderSuspension(el)) {
+        withRenderSuspension(el, () => {
+            updateAttributesCore(el, props);
+        });
+    }
+    else {
+        updateAttributesCore(el, props);
+    }
+}

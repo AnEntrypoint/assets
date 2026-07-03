@@ -1,0 +1,35 @@
+docs/lib/webjsx/attributes.js:27:60 updatePropOrAttr
+function updatePropOrAttr(el, key, value) {
+    if (el instanceof HTMLElement) {
+        if (key in el) {
+            // Fast path: property exists on HTMLElement
+            el[key] = value;
+            return;
+        }
+        if (typeof value === "string") {
+            el.setAttribute(key, value);
+            return;
+        }
+        // Fallback for non-string values on HTMLElement
+        el[key] = value;
+        return;
+    }
+    // SVG/Other namespace elements
+    const isSVG = el.namespaceURI === "http://www.w3.org/2000/svg";
+    if (isSVG) {
+        if (value !== undefined && value !== null) {
+            el.setAttribute(key, `${value}`);
+        }
+        else {
+            el.removeAttribute(key);
+        }
+        return;
+    }
+    // Fallback for other element types
+    if (typeof value === "string") {
+        el.setAttribute(key, value);
+    }
+    else {
+        el[key] = value;
+    }
+}

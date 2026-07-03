@@ -1,0 +1,2 @@
+docs/render-glb.js:52:52 
+e => { console.error(e); process.exit(1); }

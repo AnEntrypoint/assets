@@ -1,0 +1,4 @@
+docs/lib/webjsx/utils.js:78:80 setWebJSXChildNodeCache
+function setWebJSXChildNodeCache(element, childNodes) {
+    element.__webjsx_childNodes = childNodes;
+}

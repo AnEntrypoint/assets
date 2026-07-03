@@ -1,0 +1,11 @@
+docs/lib/webjsx/attributes.js:144:153 updateAttributes
+function updateAttributes(el, newProps, oldProps) {
+    if (definesRenderSuspension(el)) {
+        withRenderSuspension(el, () => {
+            updateAttributesCore(el, newProps, oldProps);
+        });
+    }
+    else {
+        updateAttributesCore(el, newProps, oldProps);
+    }
+}

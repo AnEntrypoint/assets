@@ -1,3 +1,4 @@
+@AGENTS.md
 # assets — cluster-LOD model corpus
 
 This repo holds the shared 3D model library, cluster-LOD only, published over

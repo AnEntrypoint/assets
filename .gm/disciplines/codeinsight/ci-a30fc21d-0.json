@@ -1,0 +1,4 @@
+docs/lib/webjsx/utils.js:81:83 getWebJSXChildNodeCache
+function getWebJSXChildNodeCache(element) {
+    return element.__webjsx_childNodes;
+}

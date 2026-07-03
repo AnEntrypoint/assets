@@ -1,0 +1,32 @@
+- id: verify-cluster-lod-superseded
+  task: Confirm cluster-lod branch content (7212cd33) is fully superseded by master (4a5e1fd8 equivalent + 98dfb072 later fix); diff working trees to be certain no unique bytes remain before deletion
+  witness: 'git diff master cluster-lod --stat: 929 files, master strictly newer (re-baked v2/v3/v4 clusters, decoupled deploy workflow) than cluster-lod''s 7212cd33 snapshot'
+  status: completed
+- id: delete-local-cluster-lod
+  task: Delete local branch cluster-lod after confirming superseded
+  witness: git branch -D cluster-lod -> Deleted branch cluster-lod (was 7212cd33)
+  status: completed
+- id: delete-remote-cluster-lod
+  task: Delete remote origin/cluster-lod tracking branch, now redundant with master
+  witness: git push origin --delete cluster-lod -> [deleted] cluster-lod
+  status: completed
+- id: verify-master-chain-obsolete
+  task: Confirm master-chain (orphan history, no merge-base with master) holds only pre-purge raw-source GLBs that CLAUDE.md declares removed; check no unique non-source content (docs, workflow fixes) exists only there
+  witness: 'git ls-tree -r master-chain: 1890 raw-source *.glb entries under Airport/, Weapons/, etc plus old docs/manifest.json - exactly the pre-purge format CLAUDE.md declares removed; no merge-base with master (orphan history)'
+  status: completed
+- id: delete-local-master-chain
+  task: Delete local branch master-chain (unrelated orphan raw-source history, obsoleted by cluster-only purge), force-delete since unmerged
+  witness: git branch -D master-chain -> Deleted branch master-chain (was da50524d)
+  status: completed
+- id: confirm-no-remote-master-chain
+  task: Confirm master-chain has no remote counterpart (origin) so no remote deletion is needed for it
+  witness: git branch -a -v pre-deletion showed no remotes/origin/master-chain entry
+  status: completed
+- id: final-branch-state-witness
+  task: After deletions, witness only master remains locally and on origin
+  witness: git branch -a -v -> * master 98dfb072 (local) / remotes/origin/master 98dfb072 -- exactly one branch, local and remote in sync
+  status: completed
+- id: residual-scan-porcelain
+  task: 'Residual scan: confirm working tree porcelain-clean after branch consolidation, no stray refs/reflog artifacts requiring commit'
+  witness: git status --porcelain shows M .gitignore, M CLAUDE.md, ?? .gm/ -- gm-plugkit bootstrap artifacts from this session, to be committed at CONSOLIDATE
+  status: completed

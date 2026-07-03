@@ -1,0 +1,16 @@
+docs/lib/webjsx/renderSuspension.js:10:24 withRenderSuspension
+function withRenderSuspension(el, callback) {
+    const isRenderingSuspended = !!el
+        .__webjsx_suspendRendering;
+    if (isRenderingSuspended) {
+        el.__webjsx_suspendRendering();
+    }
+    try {
+        return callback();
+    }
+    finally {
+        if (isRenderingSuspended) {
+            el.__webjsx_resumeRendering();
+        }
+    }
+}
