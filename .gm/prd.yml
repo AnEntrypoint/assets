@@ -68,5 +68,5 @@
   status: completed
 - id: push-and-close
   task: Commit+push any changes made in spoint (package.json pin bumps, package-lock) and mapspinner (if any drift found); this assets repo itself needs no code change since its only role is the static manifest.json/gh-pages host already current
-  witness: git_finalize / git_push per repo, git status --porcelain clean
-  status: pending
+  witness: 'spoint: commit 5879ebe9 pushed to origin/main (git_push {repo:''C:/dev/spoint'',branch:''main''} confirmed origin/main==HEAD). mapspinner: no changes needed (already clean/current, verified earlier). assets repo: committed+pushed PLAN/PRD state (0baf0f9c) and .gitignore hardening from this session''s own gm runtime churn.'
+  status: completed
