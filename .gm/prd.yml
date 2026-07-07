@@ -146,3 +146,6 @@
   text: 'Verify .gm/memories md corpus convergence: content-hash-keyed md present, zero legacy timestamp-keyed, flat disciplines/default+default-vec byte-unchanged; re-sync residual runtime state (last-prompt/next-step/prd) and push to master (this repo''s actual default branch, no origin/main exists).'
   status: completed
   witness: 'exec_js: total_md=3, legacy_timestamp_keyed=[], content_hash_keyed_count=3, flat_legacy_default=3, flat_legacy_vec=3; git_finalize sha 51e19d48 + git_push branch=master landed, HEAD==origin/master==51e19d48, porcelain empty'
+- id: consolidate-turnstate-churn-retriggers-ci
+  text: 'Structural observation: every CONSOLIDATE dispatch (instruction/exec_js/git_finalize) rewrites .gm/next-step.md, which then needs its own commit+push, which retriggers the full CI pipeline (Auto-Declaudeify + Deploy-to-Pages, ~5-10min for this assets-heavy repo including Playwright thumbnail generation) even though no source/asset content changed -- observed 3 consecutive CI cycles in one CONSOLIDATE pass, all docs-state-only diffs. Candidate fix: exclude .gm/next-step.md from CI triggers (path-ignore in workflow triggers), or have the CONSOLIDATE prose batch the final turn-state write with the substantive commit before the first push rather than after CI witness, avoiding a trailing docs-only commit.'
+  status: pending
