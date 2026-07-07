@@ -1,4 +1,0 @@
-docs/lib/webjsx/utils.js:67:69 setWebJSXProps
-function setWebJSXProps(element, props) {
-    element.__webjsx_props = props;
-}

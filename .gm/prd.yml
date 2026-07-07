@@ -126,3 +126,18 @@
   task: No synthetic test files -- verification is real execution only per gm rules. Confirm spoint's existing test.js / real-service test approach can exercise the new occlusion wiring (e.g. a headless real-GL check that a box query against a real depth-written occluder resolves occluded=true), or explicitly scope this to browser-verb live witness only if headless WebGL2 query readback isn't feasible in node --test
   witness: 'Confirmed occlusion queries require a real GL context (gl.beginQuery/gl.getQueryParameter) which node --test cannot provide on win32 (no node-WebGL2 binding, per this repo''s own AGENTS.md note) -- no synthetic test file was written, matching the no-synthetic-tests rule. Real verification performed: node scripts/check.mjs (250/250 files parse clean including all edits), live browser witness of the WebGL2-supported path + ModelPool''s unmodified occlusion behavior (142-147fps, zero regression), and code-level trace of every new API against the real three.js/@three.ez/instanced-mesh/streaming-gltf source (setVisibleAt, InstancedEntity.visible, OcclusionQueryTier''s candidate-shape contract). Full live vegetation/terrain occlusion demonstration is blocked by an unrelated pre-existing bug (mut-1783089925558), not by any gap in verification approach.'
   status: completed
+- id: md-corpus-convergence
+  text: 'Witness .gm/memories/ converged: 3 content-hash-keyed md, nonhash=[], .flat-export-done present; witness exec_js 9002 + watcher.log memory_md_exported exported=3'
+  status: completed
+  witness: 'exec_js 9002/9012: md_count=3 stable across run, nonhash=[], .flat-export-done present; watcher.log evt memory_md_exported exported=3 skipped=0'
+- id: flat-dirs-byte-unchanged
+  text: Witness flat memory export dirs (.gm/disciplines/default, default-vec) byte-unchanged; baseline hashes 7662037e3eef3d1a / 1c95fd7dd86f1d3e from exec_js 9002
+  status: completed
+  witness: 'exec_js 9002 vs 9012: dir-hash default=7662037e3eef3d1a, default-vec=1c95fd7dd86f1d3e identical; git_status 9003 shows zero modified/deleted under disciplines/default*'
+- id: triage-engine-boot-residuals
+  text: 'Triage-commit engine boot residuals: codeinsight vec-migration (81 old-key deletions, 12 new-key untracked), 7 modified codeinsight-manifest json, 4 provisioned .gm/instructions/*.md, next-step.md, last-prompt.txt; witness git_status 9003'
+  status: completed
+  witness: 'git_status 9003 triage: all entries engine-boot emissions on tracked .gm surfaces (codeinsight key-scheme migration per watcher.log rssearch_vectors_migrated, instructions bundle provision, next-step/last-prompt) -> outcome commit; none junk, none ignorable'
+- id: commit-push-corpus-main
+  text: Commit corpus + residuals, push to remote default branch (local checkout on master; confirm remote default), clean tree witnessed, CI green
+  status: pending

@@ -1,1 +1,1 @@
-models must cull vegetation, and terrain, so that if there's a big wall, it culls whats behind it (occlusion culling: a model like a wall should occlude vegetation/terrain rendering behind it, not just cull itself)
+Convert memory store to md corpus: spool boot on plugkit >= 0.1.824 auto-converts; drive to convergence (content-hash-keyed md under .gm/memories/, zero legacy timestamp-keyed files), commit + push corpus to main, clean tree. Engine writes no flat JSON; flat dirs byte-unchanged. Report md count + commit sha.

@@ -1,9 +1,0 @@
-docs/lib/webjsx/utils.js:70:77 getWebJSXProps
-function getWebJSXProps(element) {
-    let props = element.__webjsx_props;
-    if (!props) {
-        props = {};
-        element.__webjsx_props = props;
-    }
-    return props;
-}

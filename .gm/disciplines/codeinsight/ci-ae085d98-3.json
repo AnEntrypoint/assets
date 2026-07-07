@@ -1,8 +1,0 @@
-docs/lib/webjsx/applyDiff.js:4:10 applyDiff
-function applyDiff(parent, vnodes) {
-    const newVNodes = flattenVNodes(vnodes);
-    const newNodes = diffChildren(parent, newVNodes);
-    const props = getWebJSXProps(parent);
-    props.children = newVNodes;
-    setWebJSXChildNodeCache(parent, newNodes);
-}

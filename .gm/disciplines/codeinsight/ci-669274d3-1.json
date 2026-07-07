@@ -1,4 +1,0 @@
-docs/lib/webjsx/jsx-runtime.js:19:21 jsxs
-function jsxs(type, props, key) {
-    return jsx(type, props, key);
-}

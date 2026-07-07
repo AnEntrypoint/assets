@@ -1,9 +1,0 @@
-docs/gen-manifest.js:20:27 humanize
-function humanize(base) {
-  return base
-    .replace(/_[a-f0-9]{8}_v\d+$/, '')
-    .replace(/_v\d+$/, '')
-    .replace(/[_-]+/g, ' ')
-    .trim()
-    .replace(/\b\w/g, (c) => c.toUpperCase());
-}

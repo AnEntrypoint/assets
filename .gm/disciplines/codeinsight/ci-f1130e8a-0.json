@@ -1,4 +1,0 @@
-docs/lib/webjsx/types.js:2:4 
-(props) => {
-    return flattenVNodes(props.children);
-}

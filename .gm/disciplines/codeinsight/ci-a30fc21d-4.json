@@ -1,6 +1,0 @@
-docs/lib/webjsx/utils.js:62:66 getNamespaceURI
-function getNamespaceURI(node) {
-    return node instanceof Element && node.namespaceURI !== HTML_NAMESPACE
-        ? node.namespaceURI ?? undefined
-        : undefined;
-}

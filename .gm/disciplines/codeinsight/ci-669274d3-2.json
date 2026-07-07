@@ -1,4 +1,0 @@
-docs/lib/webjsx/jsx-runtime.js:12:14 jsx
-function jsx(type, props, key) {
-    return createElementJSX(type, props, key);
-}

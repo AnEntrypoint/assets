@@ -1,4 +1,0 @@
-docs/lib/webjsx/renderSuspension.js:1:3 definesRenderSuspension
-function definesRenderSuspension(el) {
-    return !!el.__webjsx_suspendRendering;
-}

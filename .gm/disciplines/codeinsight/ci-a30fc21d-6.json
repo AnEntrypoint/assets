@@ -1,7 +1,0 @@
-docs/lib/webjsx/utils.js:50:55 isVElement
-function isVElement(vnode) {
-    const typeofVNode = typeof vnode;
-    return (typeofVNode !== "string" &&
-        typeofVNode !== "number" &&
-        typeofVNode !== "bigint");
-}

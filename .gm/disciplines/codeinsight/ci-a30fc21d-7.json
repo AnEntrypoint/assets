@@ -1,9 +1,0 @@
-docs/lib/webjsx/utils.js:42:49 assignRef
-function assignRef(node, ref) {
-    if (typeof ref === "function") {
-        ref(node);
-    }
-    else if (ref && typeof ref === "object") {
-        ref.current = node;
-    }
-}
