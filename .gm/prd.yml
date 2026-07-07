@@ -142,3 +142,7 @@
   text: Commit corpus + residuals, push to remote default branch (local checkout on master; confirm remote default), clean tree witnessed, CI green
   status: completed
   witness: 'git_finalize 9016 sha 48e7628a + git_push 9017: 2e0b9ad5..48e7628a HEAD -> master (remote default branch = master per gh repo view, exec_js 9009)'
+- id: verify-memory-md-corpus-convergence
+  text: 'Verify .gm/memories md corpus convergence: content-hash-keyed md present, zero legacy timestamp-keyed, flat disciplines/default+default-vec byte-unchanged; re-sync residual runtime state (last-prompt/next-step/prd) and push to master (this repo''s actual default branch, no origin/main exists).'
+  status: completed
+  witness: 'exec_js: total_md=3, legacy_timestamp_keyed=[], content_hash_keyed_count=3, flat_legacy_default=3, flat_legacy_vec=3; git_finalize sha 51e19d48 + git_push branch=master landed, HEAD==origin/master==51e19d48, porcelain empty'
