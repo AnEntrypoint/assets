@@ -140,4 +140,5 @@
   witness: 'git_status 9003 triage: all entries engine-boot emissions on tracked .gm surfaces (codeinsight key-scheme migration per watcher.log rssearch_vectors_migrated, instructions bundle provision, next-step/last-prompt) -> outcome commit; none junk, none ignorable'
 - id: commit-push-corpus-main
   text: Commit corpus + residuals, push to remote default branch (local checkout on master; confirm remote default), clean tree witnessed, CI green
-  status: pending
+  status: completed
+  witness: 'git_finalize 9016 sha 48e7628a + git_push 9017: 2e0b9ad5..48e7628a HEAD -> master (remote default branch = master per gh repo view, exec_js 9009)'
