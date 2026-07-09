@@ -162,3 +162,11 @@
   subject: 'gm browser verb (playwriter/Windows bridge) evaluates plain JS expressions in vm.runInContext with no document/window bound, only bare-URL navigation dispatches succeed -- every plain-expression eval post-navigation in this session threw ReferenceError: document is not defined across 3 independent attempts (browser-4, browser-7 syntax variant, browser-9), including after session close/reopen. This blocked live-witnessing the gallery page''s thumbnail/model-click behavior in-browser; diagnosis was completed instead via curl + gh run log analysis of the actual GitHub Pages deployment.'
   witness: 'exec-spool/out/browser-4.json, browser-7.json, browser-9.json: identical stderr ''Error executing code: ReferenceError: document is not defined'' at playwriter dist/executor.js vm.runInContext, occurring after successful bare-URL navigation dispatches (browser-3.json, browser-8.json return correct {url,title}); session close+reopen (browser-5/6) did not change the failure. This is an external tool defect in the plugkit/playwriter Windows bridge, not fixable within this repo.'
   status: completed
+- id: rename-master-to-main
+  subject: 'Rename repo default branch master to main per global CLAUDE.md rule: git branch -m master main, push -u origin main, set GitHub default branch to main via gh repo edit, update .github/workflows/deploy-pages.yml push trigger from branches:[master] to branches:[main], update docs/index.html BASE raw.githubusercontent URL from /master/ to /main/, then delete the old master branch on origin once main is confirmed live and Pages deploy succeeds from it'
+  witness: pending
+  status: pending
+- id: verify-main-branch-pages-deploy
+  subject: After renaming to main, witness the Deploy to GitHub Pages workflow actually triggers from a push to main (not master) and succeeds, confirming the on:push:branches:[main] trigger edit works and Pages still deploys correctly under the new default branch
+  witness: pending
+  status: pending

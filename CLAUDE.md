@@ -19,7 +19,7 @@ GitHub Pages for the streaming-gltf demo and the spoint editor.
 
 ## GitHub Pages
 
-`.github/workflows/deploy-pages.yml` (push to `master`) thumbnails each cluster
+`.github/workflows/deploy-pages.yml` (push to `main`) thumbnails each cluster
 GLB (LOD0 via model-viewer), regenerates `manifest.json`, copies
 `streaming-cluster/` into `docs/`, and deploys to
 `https://anentrypoint.github.io/assets/`. Consumers fetch `manifest.json` and
