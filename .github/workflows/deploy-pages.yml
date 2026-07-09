@@ -64,24 +64,18 @@ jobs:
         continue-on-error: true
         timeout-minutes: 8
         env:
-          THUMB_BUDGET: '600'
+          THUMB_BUDGET: '150'
         run: |
-          node -e '
-            const { execSync } = require("child_process");
-            const fs = require("fs");
-            const budget = Number(process.env.THUMB_BUDGET);
-            const files = execSync(`git ls-files "streaming-cluster/*.cluster.glb"`).toString().trim().split("\n").filter(Boolean);
-            const pairs = [];
-            for (const glb of files) {
-              const out = `docs/thumbs/${glb.replace(/\.glb$/, ".png")}`;
-              if (fs.existsSync(out)) continue;
-              pairs.push([glb, out]);
-              if (pairs.length >= budget) break;
-            }
-            fs.writeFileSync("/tmp/thumb-pairs.json", JSON.stringify(pairs));
-            console.log(`${pairs.length} thumbnails queued (of ${files.length} total, budget ${budget})`);
-          '
-          node docs/render-glb.js --batch /tmp/thumb-pairs.json 256 256
+          n=0
+          git ls-files "streaming-cluster/*.cluster.glb" | while IFS= read -r glb; do
+            out="docs/thumbs/${glb%.glb}.png"
+            [ -f "$out" ] && continue
+            [ "$n" -ge "$THUMB_BUDGET" ] && { echo "budget $THUMB_BUDGET reached; remaining backfill next run"; break; }
+            mkdir -p "$(dirname "$out")"
+            echo "Rendering $glb"
+            node docs/render-glb.js "$glb" "$out" 256 256 || echo "WARN: failed $glb"
+            n=$((n+1))
+          done
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
