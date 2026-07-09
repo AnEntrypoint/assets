@@ -58,7 +58,7 @@ jobs:
         continue-on-error: true
         run: |
           npm install playwright
-          npx playwright install --with-deps chromium
+          npx playwright install chromium
 
       - name: Generate thumbnails (best-effort, capped)
         continue-on-error: true

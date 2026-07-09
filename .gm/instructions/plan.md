@@ -18,13 +18,15 @@ PRD = `|F|=1` plan-item store: enumerate every node in the destructive transform
 
 **Inherited rows resume first.** `ready_wave`/`prd_pending>0` at entry = undone transform, not someone else's -- THIS cover's first slice. Resume to `prd-resolve` (witnessed) or explicit re-scope/close before any fresh row; disjoint fresh cover orphaning inherited rows = stopped mid-transform, not finished.
 
+**`prd-resolve` at PLAN is bound by the same false-completion rule as VERIFY, not exempt because the row was inherited.** A `prd-resolve` whose `witness_evidence` says "deferred"/"pending next session"/"pending browser fix"/"awaits [X] recovery"/"user must refresh" is marking undone work done -- forbidden regardless of phase. Real external blockers (browser environment down, credential missing, another team's repo) keep the row `status: pending` with `blockedBy: [external, "<specific reason>"]`; they are never grounds to resolve as `completed`. A session that repeatedly hits the same external blocker (e.g. browser verb crashing every attempt) `prd-add`s a row naming the blocker itself as the thing to fix -- diagnose and repair the tool (see BROWSER discipline), not paper over it with a completed status on the original row.
+
 "Every possible" load-bears: apply to every noun/surface/transform/output the request reaches, each application a row. Single-digit count on non-trivial request = stopped early -- re-orient, re-enumerate. Density, not minimality, is the COMPLETE-time invariant. Inline TODO in response body violates `|F|=1`.
 
 ## Expansion
 
 Second transform over the first pass: for each row, corner case/caveat/failure mode/adjacent-row interaction/degenerate input/empty-overflow-reentry state -> new row. Validations, edge cases, anticipated mutables are first-class rows. Closes when "every possible" yields nothing new, not on feeling done. 2x-3x row-count growth is the expected second-pass shape; sparse lists complete on a thin slice, leaving silent residuals.
 
-**A validation/edge-case row is closed by real execution, never by a new test file.** The row's satisfaction is an `exec_js`/`browser` dispatch witnessing the case live, or an addition to the single root `test.js` real-services witness -- never a new `*.test.js`/`*.spec.js`, never a `test/` or `__tests__/` directory, never pulling in jest/mocha/vitest/pytest/unittest or any assertion/mocking library. Enumerating edge cases at PLAN is not license to author a suite for them at EXECUTE; see VERIFY's Adversarial corner-case sweep for how each class actually gets witnessed.
+**A validation/edge-case row is closed by real execution, never by a test file.** The row's satisfaction is an `exec_js`/`browser` dispatch witnessing the case live -- never a `*.test.js`/`*.spec.js` file, never a `test/` or `__tests__/` directory, never pulling in jest/mocha/vitest/pytest/unittest or any assertion/mocking library, and never a standing test file of any kind. Enumerating edge cases at PLAN is not license to author a suite for them at EXECUTE; see VERIFY's Adversarial corner-case sweep for how each class actually gets witnessed.
 
 Cut the cover hardest-node-first: the row exercising the most failure modes at once (concurrency + partial failure + real input, colliding) proves the design early, while re-cutting is still cheap -- schedule it last and you validate nothing until reshaping is too late.
 
@@ -38,10 +40,9 @@ Unknowns -> `.gm/mutables.yml` via `mutable-add`, `status: unknown`, witness = `
 
 ## Constraints
 
-Gauge every design/code decision against `.gm/constraints.md` (create from bundled default if absent) -- the standing decision-arbiter, checked at every phase.
 
 ## Dispatch
 
 Verbs: `recall`, `codesearch`, `prd-add`, `mutable-add`, `mutable-resolve`, `transition`. Plugkit holds phase on disk; you advance it by writing `transition`.
 
-`prd-add` takes `id` -- kebab-case slug (`dedupe-update-error`). Omit it -> auto `item-<ms>` id, unaddressable by intent later. Upsert semantics: fresh id appends (`{"added": id}`), existing id rewrites in place (`{"rescoped": id}`) preserving position/dependents -- the re-scope path on EXECUTE->PLAN reshaping discovery; never delete-and-re-add (orphans the handle). Re-entry to PLAN is first-class, not failure.
+`prd-add` takes `id` -- kebab-case slug (`dedupe-update-error`). Always pass it explicitly. Omitting `id` is NOT silently auto-generated: the handler tries to derive a slug from `subject`/`title`/`name`/`task`/`goal`/`description`/`notes`, and if none of those yield usable text either, the call is HARD-REJECTED (`deviation.prd-add-no-id`, no row written) -- retrying the identical no-id call repeats the same rejection forever, burning turns. On rejection: add `id` directly, or add one of those text fields, then re-dispatch. Upsert semantics: fresh id appends (`{"added": id}`), existing id rewrites in place (`{"rescoped": id}`) preserving position/dependents -- the re-scope path on EXECUTE->PLAN reshaping discovery; never delete-and-re-add (orphans the handle). Re-entry to PLAN is first-class, not failure.

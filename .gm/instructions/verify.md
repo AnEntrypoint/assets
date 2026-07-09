@@ -33,11 +33,15 @@ VERIFY is adversarial, never confirmatory: hunt every way EMIT's write breaks, v
 
 Each class exercised = exec_js/browser dispatch + witness (pass or fix-then-rewitness), same turn, before `transition`. A happy-path-only VERIFY has not verified.
 
-## Integration witness
+## Real-execution witness
 
-`test.js` at root, 200-line ceiling, real services only (mock-free) -- the single witness IS the test surface, proving a full real session end-to-end. Not one gate beside a conventional unit suite: a growing mock-heavy multi-file `test/` is the pattern gm replaces, never a coexisting exemption; the cap does not bless a parallel suite. More than the single real-services witness needs justifying, never default. Pass = integration witness; fail -> `transition` back to EXECUTE. `recursive` classifier = incomplete cover -- snake back, do not narrate past signal.
+Every claim of correctness is proven by a live `exec_js`/`browser` dispatch witnessing the real output, same turn, real services only (mock-free) -- manual troubleshooting and debugging is the entire verification surface, never a standing test file or suite. Pass = the live witness matches expectation; fail -> `transition` back to EXECUTE. `recursive` classifier = incomplete cover -- snake back, do not narrate past signal.
 
-**No unit tests, no exceptions.** A `deviation.synthetic-test-file` at VERIFY (new `*.test.*`/`*.spec.*`, a `test/`/`__tests__/` directory, or a testing-framework import found in the diff) blocks `transition` exactly like an unwitnessed mutable -- fold its assertions into `test.js` or replace them with a live `exec_js`/`browser` witness, then re-verify. This is manual legwork, not framework legwork: the adversarial corner-case sweep above is how every class gets exercised, by running the real thing, never by writing a test case that runs it later.
+**No test files, no exceptions.** A `deviation.synthetic-test-file` at VERIFY (new `*.test.*`/`*.spec.*`, a `test/`/`__tests__/` directory, a testing-framework import, or any standing root-level test file found in the diff) blocks `transition` exactly like an unwitnessed mutable -- delete it and replace its assertions with a live `exec_js`/`browser` witness, then re-verify. This is manual legwork, not framework legwork: the adversarial corner-case sweep above is how every class gets exercised, by running the real thing, never by writing a test case that runs it later.
+
+**No fake shipped code, checked at VERIFY too, not only at EMIT.** A `Mock*`/`Fake*`/`Stub*` class or a hardcoded always-succeeds/input-invariant short-circuit anywhere in the diff is the same class of deviation as a test file -- grep the diff for these names before transitioning; a mock network/service/client shipped as if it were the real integration is exactly what "nothing fake in source" forbids, whether or not it lives in a `test/` directory. Real input through real code into real output is the only acceptance shape.
+
+**Documenting a hard row instead of implementing it is a false completion, not a resolution.** `prd-resolve` refuses two identical/near-identical `witness_evidence` strings across different PRD ids (`deviation.prd-resolve-duplicate-witness`) -- generic copy-pasted witness text ("code written and tested") across structurally distinct rows is the rubber-stamp tell: a row that got a README section titled "Future Optimizations"/"Not Yet Implemented" and a `status: completed` in the same turn was NOT solved, it was deferred with different words. If a row is genuinely out of reach this turn, it stays open or gets `blockedBy: [external]` with a real, specific reason -- it does not get marked completed because a design doc for it now exists. Each row's witness must name the specific file:line/exec-output/browser-read proving THAT row's own distinct deliverable, not a shared paragraph.
 
 ## Residual-scan
 
@@ -75,7 +79,6 @@ rs-learn never calls a model; it emits the need, you supply the answer. Skipping
 
 ## Constraints
 
-Gauge every design/code decision against `.gm/constraints.md` (create from bundled default if absent) -- the standing decision-arbiter, checked at every phase.
 
 ## Dispatch
 

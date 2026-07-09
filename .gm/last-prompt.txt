@@ -1,1 +1,1 @@
-Convert memory store to md corpus: boot spool (plugkit>=0.1.824 auto-converts), drive to convergence (content-hash-keyed md under .gm/memories/, zero legacy timestamp-keyed files), commit+push corpus to main, clean tree. Engine writes no flat JSON; flat dirs byte-unchanged.
+Fix GitHub Pages gallery: thumbnails aren't appearing and clicking a model doesn't render/draw it. Investigate docs/ (gallery page, render-glb.js, gen-manifest.js), manifest.json, and the deploy-pages.yml workflow to find why thumbs are missing and model click-to-view is broken, then fix.
