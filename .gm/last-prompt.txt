@@ -1,1 +1,1 @@
-Fix GitHub Pages gallery: thumbnails aren't appearing and clicking a model doesn't render/draw it. Investigate docs/ (gallery page, render-glb.js, gen-manifest.js), manifest.json, and the deploy-pages.yml workflow to find why thumbs are missing and model click-to-view is broken, then fix.
+fix the thumbs and previews on https://anentrypoint.github.io/assets not working
