@@ -89,10 +89,6 @@ select.sort-sel{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:5px;co
 <script type="module">
 import { createElement as h, applyDiff } from './lib/webjsx/index.js';
 
-customElements.whenDefined('model-viewer').then(() => {
-  customElements.get('model-viewer').setMeshoptDecoderLocation(new URL('lib/meshopt_decoder.js', location.href).href);
-});
-
 const BASE = '';
 const ICONS = {
   Airport:'✈️',Appliances:'🍳',BeerBottles:'🍺',Containers:'📦',

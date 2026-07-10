@@ -62,7 +62,6 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
   await page.waitForFunction(() => customElements.get('model-viewer') !== undefined, { timeout: 15000 })
     .catch((e) => console.error(`[timing] customElements wait failed: ${e.message}`));
   await page.evaluate((port) => {
-    customElements.get('model-viewer').setMeshoptDecoderLocation(`http://127.0.0.1:${port}/meshopt_decoder.js`);
     document.querySelector('#mv').src = `http://127.0.0.1:${port}/model.glb`;
   }, port).catch((e) => console.error(`[timing] evaluate failed: ${e.message}`));
 
