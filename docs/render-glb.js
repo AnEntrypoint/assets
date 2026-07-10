@@ -46,6 +46,8 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
   });
 
   const page = await browser.newPage();
+  page.on('console', (msg) => console.error(`[page] ${msg.type()}: ${msg.text()}`));
+  page.on('pageerror', (err) => console.error(`[pageerror] ${err.message}`));
   await page.setViewportSize({ width, height });
   await page.setContent(`<!DOCTYPE html><html><head>
 <style>*{margin:0;padding:0;background:#1a1a1a}body{width:${width}px;height:${height}px;overflow:hidden}</style>
@@ -57,16 +59,17 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
 </model-viewer>
 </body></html>`);
 
-  await page.waitForFunction(() => customElements.get('model-viewer') !== undefined, { timeout: 15000 }).catch(() => {});
+  await page.waitForFunction(() => customElements.get('model-viewer') !== undefined, { timeout: 15000 })
+    .catch((e) => console.error(`[timing] customElements wait failed: ${e.message}`));
   await page.evaluate((port) => {
     customElements.get('model-viewer').setMeshoptDecoderLocation(`http://127.0.0.1:${port}/meshopt_decoder.js`);
     document.querySelector('#mv').src = `http://127.0.0.1:${port}/model.glb`;
-  }, port).catch(() => {});
+  }, port).catch((e) => console.error(`[timing] evaluate failed: ${e.message}`));
 
   await page.waitForFunction(() => {
     const mv = document.querySelector('#mv');
     return mv && mv.loaded;
-  }, { timeout: 15000 }).catch(() => {});
+  }, { timeout: 15000 }).catch((e) => console.error(`[timing] loaded wait failed: ${e.message}`));
 
   await page.waitForTimeout(400);
   await page.screenshot({ path: outputPng });
