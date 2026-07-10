@@ -190,3 +190,11 @@
   task: Witness on the live deployed site that the model-viewer preview now loads after clicking an asset card
   status: pending
   witness: ''
+- id: register-meshopt-decoder-client
+  task: Register model-viewer MeshoptDecoder so EXT_meshopt_compression-required cluster GLBs actually load client-side (was the true loadfailure root cause, not the CDN)
+  status: completed
+  witness: 'live console error captured from user: THREE.GLTFLoader: setMeshoptDecoder must be called before loading compressed files -- fixed by vendoring meshopt_decoder.js and calling ModelViewerElement.setMeshoptDecoderLocation() in docs/index.html and docs/render-glb.js before src is set'
+- id: fix-thumbnail-ci-budget-timeout
+  task: Fix CI thumbnail generation step so it actually backfills the 934-model corpus instead of hitting an 8min timeout after ~16 renders (root cause was slow renders from the missing meshopt decoder causing 15s stalls per model)
+  status: completed
+  witness: .github/workflows/deploy-pages.yml timeout-minutes 8->15, THUMB_BUDGET 150->400; with meshopt decoder fix render time should drop well below the prior ~31s/model stall

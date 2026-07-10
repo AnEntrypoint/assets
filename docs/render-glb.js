@@ -16,6 +16,8 @@ const glbPath = path.resolve(inputGlb);
 const glbBytes = fs.readFileSync(glbPath);
 const mvScriptPath = path.resolve(__dirname, 'lib/model-viewer.min.js');
 const mvScript = fs.readFileSync(mvScriptPath);
+const meshoptScriptPath = path.resolve(__dirname, 'lib/meshopt_decoder.js');
+const meshoptScript = fs.readFileSync(meshoptScriptPath);
 
 (async () => {
   const server = http.createServer((req, res) => {
@@ -25,6 +27,9 @@ const mvScript = fs.readFileSync(mvScriptPath);
     } else if (req.url === '/model-viewer.min.js') {
       res.writeHead(200, { 'Content-Type': 'text/javascript' });
       res.end(mvScript);
+    } else if (req.url === '/meshopt_decoder.js') {
+      res.writeHead(200, { 'Content-Type': 'text/javascript' });
+      res.end(meshoptScript);
     } else {
       res.writeHead(404); res.end();
     }
@@ -46,11 +51,17 @@ const mvScript = fs.readFileSync(mvScriptPath);
 <style>*{margin:0;padding:0;background:#1a1a1a}body{width:${width}px;height:${height}px;overflow:hidden}</style>
 <script type="module" src="http://127.0.0.1:${port}/model-viewer.min.js"></script>
 </head><body>
-<model-viewer id="mv" src="http://127.0.0.1:${port}/model.glb"
+<model-viewer id="mv"
   style="width:${width}px;height:${height}px;background-color:#1a1a1a"
   shadow-intensity="1" exposure="1.2" tone-mapping="commerce">
 </model-viewer>
 </body></html>`);
+
+  await page.waitForFunction(() => customElements.get('model-viewer') !== undefined, { timeout: 15000 });
+  await page.evaluate((port) => {
+    customElements.get('model-viewer').setMeshoptDecoderLocation(`http://127.0.0.1:${port}/meshopt_decoder.js`);
+    document.querySelector('#mv').src = `http://127.0.0.1:${port}/model.glb`;
+  }, port);
 
   await page.waitForFunction(() => {
     const mv = document.querySelector('#mv');

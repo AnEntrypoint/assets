@@ -62,9 +62,9 @@ jobs:
 
       - name: Generate thumbnails (best-effort, capped)
         continue-on-error: true
-        timeout-minutes: 8
+        timeout-minutes: 15
         env:
-          THUMB_BUDGET: '150'
+          THUMB_BUDGET: '400'
         run: |
           n=0
           git ls-files "streaming-cluster/*.cluster.glb" | while IFS= read -r glb; do
