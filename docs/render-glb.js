@@ -25,10 +25,10 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
       res.writeHead(200, { 'Content-Type': 'model/gltf-binary', 'Access-Control-Allow-Origin': '*' });
       res.end(glbBytes);
     } else if (req.url === '/model-viewer.min.js') {
-      res.writeHead(200, { 'Content-Type': 'text/javascript' });
+      res.writeHead(200, { 'Content-Type': 'text/javascript', 'Access-Control-Allow-Origin': '*' });
       res.end(mvScript);
     } else if (req.url === '/meshopt_decoder.js') {
-      res.writeHead(200, { 'Content-Type': 'text/javascript' });
+      res.writeHead(200, { 'Content-Type': 'text/javascript', 'Access-Control-Allow-Origin': '*' });
       res.end(meshoptScript);
     } else {
       res.writeHead(404); res.end();
