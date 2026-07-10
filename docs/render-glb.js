@@ -54,7 +54,7 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
 <script type="module">
 import { ModelViewerElement } from "http://127.0.0.1:${port}/model-viewer.min.js";
 window.ModelViewerElement = ModelViewerElement;
-ModelViewerElement.setMeshoptDecoderLocation("http://127.0.0.1:${port}/meshopt_decoder.js");
+ModelViewerElement.meshoptDecoderLocation = "http://127.0.0.1:${port}/meshopt_decoder.js";
 </script>
 </head><body>
 <model-viewer id="mv"

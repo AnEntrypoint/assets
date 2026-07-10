@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="lib/rippleui.css">
 <script type="module">
 import { ModelViewerElement } from './lib/model-viewer.min.js';
-ModelViewerElement.setMeshoptDecoderLocation(new URL('lib/meshopt_decoder.js', location.href).href);
+ModelViewerElement.meshoptDecoderLocation = new URL('lib/meshopt_decoder.js', location.href).href;
 </script>
 <style>
 *{box-sizing:border-box}
