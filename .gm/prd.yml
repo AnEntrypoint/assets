@@ -170,3 +170,23 @@
   subject: After renaming to main, witness the Deploy to GitHub Pages workflow actually triggers from a push to main (not master) and succeeds, confirming the on:push:branches:[main] trigger edit works and Pages still deploys correctly under the new default branch
   witness: gh repo view AnEntrypoint/assets --json defaultBranchRef -q .defaultBranchRef.name -> main. gh run list --workflow=deploy-pages.yml shows push events on branch main correctly triggering Deploy to GitHub Pages (runs 29052708607, 29053477917, 29054143925, 29054911938). The 'deploy' job initially failed with 'Branch main is not allowed to deploy to github-pages due to environment protection rules' (run 29052708607) until gh api repos/AnEntrypoint/assets/environments/github-pages/deployment-branch-policies was updated to add a main policy (id 54251631) and delete the stale master policy (id 45836027) -- subsequent runs 29053477917/29054143925/29054911938 all show deploy job green. curl -o /dev/null -w %{http_code} https://anentrypoint.github.io/assets/ -> 200 and https://anentrypoint.github.io/assets/manifest.json -> 200 confirm the live site actually serves post-rename. curl https://anentrypoint.github.io/assets/ | grep BASE shows the deployed docs/index.html correctly reads 'https://raw.githubusercontent.com/AnEntrypoint/assets/main/' and a sample model GLB at that main-branch raw URL returns 200.
   status: completed
+- id: diagnose-thumb-preview-failure
+  task: Diagnose why thumbs/previews on https://anentrypoint.github.io/assets are not working
+  status: completed
+  witness: 'browser dispatch: manifest.json 200, 891 thumb <img> all complete/naturalWidth=256 (thumbs work); model-viewer #mv never loads (mvLoaded false) because docs/index.html BASE pointed at https://raw.githubusercontent.com/AnEntrypoint/assets/main/ which silently fails to load as model-viewer src'
+- id: fix-model-viewer-preview-base-url
+  task: Fix docs/index.html model-viewer preview + download link to use same-origin docs/streaming-cluster path instead of raw.githubusercontent.com
+  status: completed
+  witness: docs/index.html:92 BASE changed from raw.githubusercontent.com URL to empty string; deploy-pages.yml already copies streaming-cluster/*.cluster.glb into docs/streaming-cluster/ so manifest path resolves same-origin
+- id: commit-push-thumb-preview-fix
+  task: Commit and push the BASE fix as lanmower
+  status: completed
+  witness: git_finalize sha 3e47966a, branch main, pushed:true
+- id: watch-deploy-pages-ci-for-fix
+  task: Watch triggered Deploy to GitHub Pages workflow run to green after pushing the fix
+  status: completed
+  witness: gh run 29106518222 headSha 3e47966a conclusion:success status:completed
+- id: verify-live-preview-loads-post-deploy
+  task: Witness on the live deployed site that the model-viewer preview now loads after clicking an asset card
+  status: pending
+  witness: ''
