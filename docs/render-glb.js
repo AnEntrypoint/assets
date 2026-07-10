@@ -57,11 +57,11 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
 </model-viewer>
 </body></html>`);
 
-  await page.evaluate(async (port) => {
-    await customElements.whenDefined('model-viewer');
+  await page.waitForFunction(() => customElements.get('model-viewer') !== undefined, { timeout: 15000 }).catch(() => {});
+  await page.evaluate((port) => {
     customElements.get('model-viewer').setMeshoptDecoderLocation(`http://127.0.0.1:${port}/meshopt_decoder.js`);
     document.querySelector('#mv').src = `http://127.0.0.1:${port}/model.glb`;
-  }, port);
+  }, port).catch(() => {});
 
   await page.waitForFunction(() => {
     const mv = document.querySelector('#mv');
