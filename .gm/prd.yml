@@ -188,8 +188,8 @@
   witness: gh run 29106518222 headSha 3e47966a conclusion:success status:completed
 - id: verify-live-preview-loads-post-deploy
   task: Witness on the live deployed site that the model-viewer preview now loads after clicking an asset card
-  status: pending
-  witness: ''
+  status: completed
+  witness: 'browser dispatch on live site https://anentrypoint.github.io/assets/?sel=streaming-cluster%2FMedical__a_wheelchair_63e61bed_v4.cluster.glb: page.evaluate returned {loaded:true, src:"streaming-cluster/Medical__a_wheelchair_63e61bed_v4.cluster.glb"}. Root cause chain resolved across commits 3e47966a (same-origin path), 738abda3 (vendor model-viewer), 4f4ec291+6488b39a+e4e0acff (CORS on local render server), d9e37ae2+1e68a1b1+ec3227dc (meshoptDecoderLocation as a property setter on ModelViewerElement, not a method). CI run 29128445172 rendered 271/272 thumbnails cleanly with zero [page] error lines (only harmless viewport warnings).'
 - id: register-meshopt-decoder-client
   task: Register model-viewer MeshoptDecoder so EXT_meshopt_compression-required cluster GLBs actually load client-side (was the true loadfailure root cause, not the CDN)
   status: completed

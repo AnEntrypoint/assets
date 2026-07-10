@@ -18,3 +18,4 @@ scripts/push-orphan-via-chain.sh
 .gm/browser-profile/
 .gm/browser-profile-*/
 .gm/browser-state/
+.gm/witness/
