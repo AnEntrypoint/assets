@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Asset Viewer</title>
 <link rel="stylesheet" href="lib/rippleui.css">
-<script type="module" src="lib/model-viewer.min.js"></script>
+<script type="module">
+import { ModelViewerElement } from './lib/model-viewer.min.js';
+ModelViewerElement.setMeshoptDecoderLocation(new URL('lib/meshopt_decoder.js', location.href).href);
+</script>
 <style>
 *{box-sizing:border-box}
 html,body{height:100%;overflow:hidden;margin:0}

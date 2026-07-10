@@ -51,7 +51,11 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
   await page.setViewportSize({ width, height });
   await page.setContent(`<!DOCTYPE html><html><head>
 <style>*{margin:0;padding:0;background:#1a1a1a}body{width:${width}px;height:${height}px;overflow:hidden}</style>
-<script type="module" src="http://127.0.0.1:${port}/model-viewer.min.js"></script>
+<script type="module">
+import { ModelViewerElement } from "http://127.0.0.1:${port}/model-viewer.min.js";
+window.ModelViewerElement = ModelViewerElement;
+ModelViewerElement.setMeshoptDecoderLocation("http://127.0.0.1:${port}/meshopt_decoder.js");
+</script>
 </head><body>
 <model-viewer id="mv"
   style="width:${width}px;height:${height}px;background-color:#1a1a1a"
@@ -59,8 +63,8 @@ const meshoptScript = fs.readFileSync(meshoptScriptPath);
 </model-viewer>
 </body></html>`);
 
-  await page.waitForFunction(() => customElements.get('model-viewer') !== undefined, { timeout: 15000 })
-    .catch((e) => console.error(`[timing] customElements wait failed: ${e.message}`));
+  await page.waitForFunction(() => window.ModelViewerElement !== undefined, { timeout: 15000 })
+    .catch((e) => console.error(`[timing] ModelViewerElement wait failed: ${e.message}`));
   await page.evaluate((port) => {
     document.querySelector('#mv').src = `http://127.0.0.1:${port}/model.glb`;
   }, port).catch((e) => console.error(`[timing] evaluate failed: ${e.message}`));
