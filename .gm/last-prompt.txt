@@ -1,1 +1,0 @@
-fix the thumbs and previews on https://anentrypoint.github.io/assets not working

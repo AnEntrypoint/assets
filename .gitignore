@@ -19,3 +19,5 @@ scripts/push-orphan-via-chain.sh
 .gm/browser-profile-*/
 .gm/browser-state/
 .gm/witness/
+config.bat
+node_modules
